@@ -1,0 +1,4 @@
+    - A ragyogás
+    - Gyilkosság a panel tetején
+    - AZ
+    - Tedd magad hasznossá

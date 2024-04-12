@@ -1,0 +1,7 @@
+colors for css:
+--clr-background: #f5f5f7;
+--clr-text: #051a06;
+--primary: #34dc45;
+--secondary: #91eae7;
+--accent: #57b6e0;
+
