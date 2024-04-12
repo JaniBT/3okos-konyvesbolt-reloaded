@@ -1,0 +1,7 @@
+@keyframes space_animate {
+    0%, 100% {
+        transform: translate(-50%, 0);
+    } 50% {
+        transform: translate(-50%, -35%);
+    }
+}
