@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./stylesheet/animation.css">
     <link rel="stylesheet" href="./stylesheet/styles.css">
     <link rel="stylesheet" href="./stylesheet/media_queries.css">
@@ -19,7 +20,7 @@
                 <ul>
                     <li><a href="../index.html">Kezdőlap</a></li>
                     <li><a href="#elete">Élete</a></li>
-                    <li><a href="#">Könyvei</a></li>
+                    <li><a href="#konyvei">Könyvei</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,8 +38,8 @@
         <div class="main-content_menus">
             <h2 id="elete">Stephen King Élete</h2>
             <div class="menus">
-                <a href="#">Top 10 könyve</a>
-                <a href="#">Összes könyve</a>
+                <a href="#konyvei">Top 10 könyve</a>
+                <a target="_blank" href="https://stephenking.com/works/index.html">Összes könyve</a>
                 <a target="_blank" href="https://hu.wikipedia.org/wiki/Stephen_King">Forrás</a>
             </div>
         </div>
@@ -151,10 +152,21 @@
         <button id="scrollToTopButton" class="scroll-to-top" title="Vissza az oldal tetejére">↑</button>
 
         <div class="main-content__book_menus">
-            <h2>TOP 10 Könyve</h2>
-            
+            <h2 id="konyvei">TOP 10 Könyve</h2>
+            <div class="carousel-div">
+                <span class="leftBtn">←</span>
+                <div class="carousel-cards">
+                    
+                </div>
+                <span class="rightBtn">→</span>
+            </div>
         </div>
     </main>
+
+    <footer class="footer">
+        <p><span id="fullYear"></span> &copy; Paginae Fascinantes - Minden jog fenntartva</p>
+        <p>A 3okos tulajdona.</p>
+    </footer>
     
     <script src="./scripts/scripts.js"></script>
 </body>
