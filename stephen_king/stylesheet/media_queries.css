@@ -1,0 +1,8 @@
+@media screen and (max-height: 350px) {
+    .main-wrapper {
+        height: 750px;
+    }
+    .main-wrapper_bottom {
+        height: 750px;
+    }
+}

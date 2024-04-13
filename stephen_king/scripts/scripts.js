@@ -79,7 +79,6 @@ document.querySelector('.rightBtn').addEventListener('click', () => {
 })
 
 window.addEventListener('keydown', (e) => {
-    e.preventDefault()
     if (e.key === "ArrowRight") {
         index = index < carousel_images.length - 1 ? index + 1 : 0
         showCard(index, 'right')
