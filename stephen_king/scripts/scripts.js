@@ -16,14 +16,31 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > window.innerHeight - 200) {
         element.classList.remove('navbar')
         element.classList.add('newNavbar')
-        if (icondiv.parentNode !== element) {
-            element.appendChild(icondiv)
+        if (window.innerWidth < 751) {
+            return
+        }
+        else {
+            if (icondiv.parentNode !== element) {
+                element.appendChild(icondiv)
+            }
         }
     } else {
         element.classList.remove('newNavbar')
         element.classList.add('navbar')
         if (icondiv.parentNode === element) {
             element.removeChild(icondiv)
+        }
+    }
+})
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth < 751) {
+        if (icondiv.parentNode === element) {
+            element.removeChild(icondiv)
+        }
+    } else {
+        if (icondiv.parentNode !== element) {
+            element.appendChild(icondiv)
         }
     }
 })
@@ -94,3 +111,8 @@ showCard(index, '')
 const footerYear = document.querySelector('#fullYear')
 const date = new Date()
 footerYear.textContent = date.getFullYear()
+
+function openDropdown(x) {
+    x.classList.toggle('change')
+    document.getElementById('dropdown-menu').classList.toggle('show')
+}
