@@ -15,14 +15,18 @@
 <body>
   <!-- Top-nav -->
   <div class="top-nav">
-    <img id="img-top-nav" src="https://placehold.co/125x125" alt="">
-    <input id="search-input" type="text">
-    <button id="btn-search-ico">    
-      <img id="search-ico" src="assets/search-ico-ios.png" alt="">
-    </button>
-    <span>
-
-    </span>
+    <h1>Paginae Fascinantes</h1>
+    <div class="div-search">
+        <input id="search-input" type="text">
+        <button id="btn-search-ico">
+            <img id="search-ico" src="assets/search-ico-ios.png" alt="">
+        </button>
+    </div>
+    <div class="nav-links">
+        <a href="" class="nav-login-link">Bejelentkezés</a>
+        <span>/</span>
+        <a href="" class="nav-login-link">Regisztráció</a>
+    </div>
   </div>
   <!-- / Top-nav -->
 
@@ -39,6 +43,34 @@
   <!-- / Navbar -->
 
   <!-- Carousel -->
+  <div class="carousel">
+    <div class="mySlides fade">
+      <img class="carousel-img" src="assets/book-ragyogas.png" alt="a_ragyogas">
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="carousel-img" src="assets/book-gyilkossag.png" alt="gyilkossag_a_panel_tetejen">
+    </div>
+    
+    <div class="mySlides fade">
+      <img class="carousel-img" src="assets/book-az.png" alt="az">
+    </div>
+
+    <div class="mySlides fade">
+      <img class="carousel-img" src="assets/book-teddmagad.png" alt="tedd_magad_hasznossá">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <br>
+  <div class="carousel-dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
   <div class="carousel-bottom">
     <a class="carousel-link" href="stephen_king/stephen_king.html">Ajánlatunk: <i><b>Stephen King</b></i></a>
     <a class="carousel-link" href="stephen_king/stephen_king.html">Dulai Péter kötete</a>
@@ -48,6 +80,23 @@
   <!-- /Carousel -->
 
   <!-- Main -->
+  <div class="main">
+    <section>
+
+    </section>
+  </div>
+  <!-- /Main -->
+
   <!-- Footer -->
+  <footer class="footer">
+    <h2>Paginae Fascinantes</h2>
+    <p>
+      <span id="fullYear">?</span> 
+      &copy; Paginae Fascinantes - Minden jog fenntartva</p>
+    <p>A 3okos tulajdona.</p>
+  </footer>
+  <!-- /Footer -->
+
+  <script src="script.js"></script>
 </body>
 </html>
