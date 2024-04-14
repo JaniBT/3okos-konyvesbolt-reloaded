@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+:root{
+    --whiteish: #F5F5F7;
+    --inter: "Inter", sans-serif;
+    --kadwa: "Kadwa", serif;
+    --black: #000;
+}
+*{
+    user-select: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background: var(--whiteish);
+}
+.top-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#img-top-nav{
+    border: 1px dotted red;
+}
+#search-input{
+    height: 30px;
+    width: 650px;
+    font-size: 1.25rem;
+    border: 1px solid #939393;
+    color: green;
+}
+#btn-search-ico{
+    background: #888888;
+    border: none;
+    cursor: pointer;
+}
+#search-ico{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.navbar{
+    padding-block: 1rem;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-block: 1rem 0;
+    padding: 0;
+}
+.nav-select{
+    color: var(--black);
+    font-family: var(--kadwa);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.navbar hr{
+    width: 80%;
+    border: 1.75px solid #939393;
+    margin-block: 0 .5rem;
+}
+.carousel-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+    text-align: center;
+    padding: .25rem;
+}
+.carousel-link{
+    color: var(--black);
+    font-family: var(--inter);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
