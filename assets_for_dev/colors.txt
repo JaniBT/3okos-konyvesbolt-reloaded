@@ -1,6 +1,6 @@
 colors for css:
 --text: #131610;
---background: #f7f8f6;
+--background: #f5f5f7;
 --primary: #81956f;
 --secondary: #abc1b8;
 --accent: #93afae;

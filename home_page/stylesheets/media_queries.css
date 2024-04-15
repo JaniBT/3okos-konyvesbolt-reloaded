@@ -1,0 +1,23 @@
+@media screen and (max-width: 1150px) {
+    .search_div {
+        display: none;
+    }
+    .notShowing {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .middle-navbar {
+        display: none;
+    }
+
+    .dropdown-menus {
+        display: block;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+    
+}

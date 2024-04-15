@@ -1,0 +1,174 @@
+:root {
+    --ff-josefin: 'Josefin Slab', serif;
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --textTransition: color 0.3s ease;
+
+    --text: #131610;
+    --background: #f5f5f7;
+    --primary: #81956f;
+    --secondary: #abc1b8;
+    --accent: #93afae;
+
+    --bg-hover-gray: rgb(31 41 55 / 1);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--ff-poppins);
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+/* Navbar */
+
+.main-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.title_div h1 {
+    font-family: var(--ff-josefin);
+    font-size: 1.5rem;
+}
+
+.title_div span {
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.middle-navbar {
+    width: fit-content;
+}
+
+.middle-navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.middle-navbar ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text);
+
+    transition: var(--textTransition);
+}
+
+.middle-navbar ul li a:hover {
+    color: var(--secondary);
+}
+
+.search_div {
+    width: 209px;
+}
+
+.search_div i {
+    cursor: pointer;
+    margin-left: calc(209px - 1.5rem);
+    font-size: 1.5rem;
+
+    transition: var(--textTransition);
+}
+
+.search_div i:hover {
+    color: var(--secondary);
+}
+
+.notShowing {
+    display: none;
+}
+
+.searchBtn {
+    padding: 0.3rem;
+    border: none;
+    background-color: var(--background);
+    cursor: pointer;
+}
+
+.searchBtn i {
+    font-size: 1rem;
+
+    transition: var(--textTransition);
+}
+
+.searchBtn i:hover {
+    color: var(--secondary);
+}
+
+.hamburger-container {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    -ms-user-select: none;
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: var(--text);
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 0.6rem;
+    }
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 { opacity: 0; }
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.dropdown-menus {
+    display: none;
+    position: relative;
+}
+
+.menus {
+    position: absolute;
+    display: none;
+    right: 0;
+
+    background-color: var(--background);
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 0.2);
+    z-index: 1;
+}
+
+.menus a {
+    color: var(--text);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    transition: all 0.4s ease;
+}
+
+.menus a:hover {
+    background-color: var(--bg-hover-gray);
+    color: var(--background);
+}
+
+.show {
+    display: block;
+}
+
+/* Navbar end */
