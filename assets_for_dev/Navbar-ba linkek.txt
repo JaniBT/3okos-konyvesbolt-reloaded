@@ -1,2 +1,0 @@
-<Link to="/">Példa János Kezdőlap</Link>
-<Link to="/stephen_king">Stephen King</Link>

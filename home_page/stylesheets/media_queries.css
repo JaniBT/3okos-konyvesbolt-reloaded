@@ -5,6 +5,10 @@
     .notShowing {
         display: block;
     }
+
+    .main-content {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -20,4 +24,18 @@
         display: block;
     }
     
+    .main-content {
+        width: 95%;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .carousel {
+        height: 150px;
+    }
 }
