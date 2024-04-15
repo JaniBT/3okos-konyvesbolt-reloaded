@@ -44,7 +44,7 @@ h1:first-letter{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
-    width: 85%;
+    width: 75%;
     margin-inline: auto;
 }
 .div-search{
@@ -81,7 +81,7 @@ h1:first-letter{
 
 .navbar{
     padding-block: 1rem;
-    width: 75%;
+    width: 50%;
     margin-inline: auto;
 }
 .navbar ul{
@@ -109,7 +109,7 @@ h1:first-letter{
     margin: auto;
     box-sizing: border-box;
     margin-block: 1.5rem 0;
-    width: 85%;
+    width: 65%;
     margin-inline: auto;
 }
 .mySlides{
@@ -188,7 +188,7 @@ h1:first-letter{
     gap: 1rem 0;
     text-align: center;
     padding: .25rem;
-    width: 85%;
+    width: 65%;
     margin-inline: auto;
 }
 .carousel-link{
