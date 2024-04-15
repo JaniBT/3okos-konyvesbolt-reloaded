@@ -57,6 +57,9 @@ html, body {
         transition: all 0.3s ease;
 
         & .navbar{
+            animation: fadeFromTop 1s forwards;
+
+
             width: 500px;
             padding-block: 0.5rem;
 
@@ -101,6 +104,8 @@ html, body {
 
         & .main-wrapper_title {
             padding: .75rem;
+
+            animation: fadeIn 1s forwards;
 
             background-color: var(--bg-black);
             background-color: var(--bg-black-transparent-30);
