@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/media_queries.css">
+
+    <title>Paginae Fascinantes - E-könyvek</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="title_div">
+            <h1><span>P</span>aginae Fascinantes</h1>
+        </div>
+        <nav class="middle-navbar">
+            <ul>
+                <li><a href="../home_page/">Kezdőlap</a></li>
+                <li><a href="../books-page/books.html">Könyvek</a></li>
+                <li><a href="../e-books/ebooks.html">E-Könyvek</a></li>
+                <li><a href="../stephen_king/stephen_king.html">Stephen King</a></li>
+                <li class="notShowing">
+                    <button type="button" class="searchBtn"><i class="fa fa-search"></i></button>
+                </li>
+            </ul>          
+        </nav>
+        <div class="search_div">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="dropdown-menus">
+            <div class="hamburger-container" onclick="openDropdown(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="dropdown-menu" class="menus">
+                <a href="../home_page/index.html">Kezdőlap</a>
+                <a href="../books-page/books.html">Könyvek</a>
+                <a href="../e-books/ebooks.html">E-Könyvek</a>
+                <a href="../stephen_king/stephen_king.html">Stephen King</a>
+                <a href="javascript:void(0)" onclick="openSearchBar()"><i class="fa fa-search"></i> Keresés</a>
+            </div>
+        </div>
+    </header>
+    <!-- / Header -->
+
+    <!-- Breadcrumb  -->
+    <ul class="breadcrumb">
+        <li><a href="../home_page/index.html">Kezdőlap</a></li>
+        <li>E-könyvek</li>
+    </ul>
+    <!-- / Breadcrumb  -->
+
+    <!-- Category -->
+    <div class="div-category">
+        <h2 class="category-head">Kategóriák</h2>
+        <hr>
+        <ul class="category-list">
+            <li><a href="" class="category-list-link">Irodalom</a></li>
+            <li><a href="" class="category-list-link">Ismeretterjesztő</a></li>
+            <li><a href="" class="category-list-link">Életmód, egészség</a></li>
+            <li><a href="" class="category-list-link">Társ. tudományok</a></li>
+            <li><a href="" class="category-list-link">Ezotéria</a></li>
+        </ul>
+        <hr>
+    </div>
+    <!-- / Category -->
+
+    <!-- Books -->
+    <div class="books">
+        <h2 class="books-head">Sikerlista</h2>
+        <ul class="books-list">
+            <li>1.</li>
+            <li>2.</li>
+            <li>3.</li>
+        </ul>
+    </div>
+    <!-- / Books -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img id="footer-img" src="../assets/logo.png" alt="logo">
+        <ul class="footer-list">
+            <li class="footer-liItem"><a href="https://github.com/JaniBT" class="footer-link" target="_blank">Csordás János</a></li>
+            <li class="footer-liItem"><a href="https://github.com/arris05" class="footer-link" target="_blank">Vásári András</a></li>
+            <li class="footer-liItem"><a href="https://github.com/koosbalazsbence" class="footer-link" target="_blank">Koós Balázs Bence</a></li>
+            <!-- <li><a href="https://github.com/koosbalazsbence" target="_blank"><img class="footer-img" src="../assets/github.png" alt="github-logo-link" title="@koosbalazsbence"></a></li> -->
+        </ul>
+        <hr id="footer-hr">
+        <ul class="footer-list">
+            <li class="footer-liItem">&copy; Paginae Fascinantes - Minden jog fenntartva</li>
+            <li class="footer-liItem">A 3okos tulajdona</li>
+        </ul>
+    </footer>
+    <!-- / Footer -->
+    <script src="script/script.js"></script>
+</body>
+</html>
