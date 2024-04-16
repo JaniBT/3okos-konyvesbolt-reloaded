@@ -15,10 +15,6 @@ function carouselImageChanging(button) {
     if (newIndex < 0) newIndex = slides.children.length - 1
     if (newIndex >= slides.children.length) newIndex = 0
 
-    setInterval(() => {
-        newIndex += 1
-    }, 10000)
-
     slides.children[newIndex].dataset.active = true
     delete activeSlide.dataset.active
 
@@ -31,6 +27,16 @@ function carouselImageChanging(button) {
         }
     })
 }
+
+function autoChangeSlide() {
+    const carousel = document.querySelector('[data-carousel]')
+    const nextButton = carousel.querySelector('[data-carousel-button="next"]')
+    setInterval(() => {
+        carouselImageChanging(nextButton)
+    }, 8000)
+}
+
+autoChangeSlide();
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
