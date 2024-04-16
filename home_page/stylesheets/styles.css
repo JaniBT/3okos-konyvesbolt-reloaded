@@ -176,15 +176,16 @@ body {
 
 .main-content {
     margin-top: 1rem;
-    width: 75%;
+    width: 65%;
     margin-inline: auto;
 }
 
 /* Carousel */
 
 .carousel {
+    margin-inline: auto;
     width: 100%;
-    height: 420px;
+    height: 450px;
     position: relative;
 }
 
@@ -207,8 +208,6 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center;
 }
 
 .slide[data-active] {
@@ -241,7 +240,7 @@ body {
 }
 
 .carousel-button.prev {
-    left: 1rem;
+    left: 0;
 }
 
 .carousel-button.next {
@@ -249,14 +248,13 @@ body {
 }
 
 .circles {
+    z-index: 2;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
     user-select: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .circles i {
@@ -268,4 +266,55 @@ body {
 .circles i[data-active] {
     font-size: 1.3rem;
     color: var(--clr-orange);
+}
+
+/* Recommend section */
+
+.section_recommend {
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 4.5rem;
+}
+
+.recommend_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 0.75rem;
+}
+
+.recommend_title h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.full_list {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.full_list p {
+    font-size: 1rem;
+}
+
+.full_list button {
+    padding: .5rem;
+    border: none;
+    background-color: gray;
+    color: var(--background);
+    cursor: pointer;
+}
+
+.full_list button:hover {
+    background-color: rgb(0 0 0 / .3);
+}
+
+.full_list button i {
+    font-size: 1rem;
+}
+
+.main_recommend_book {
+    width: 350px;
+    height: 250px;
 }
