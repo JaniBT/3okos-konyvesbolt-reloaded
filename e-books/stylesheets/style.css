@@ -152,12 +152,12 @@ body{
 }
 
 .breadcrumb{
-    width: 65%;
-    margin-inline: auto;
+    margin: 0;
 }
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
+    background-color: #eee;
 }
 ul.breadcrumb li {
     display: inline;
@@ -169,11 +169,11 @@ ul.breadcrumb li+li:before {
     content: "/\00a0";
 }
 ul.breadcrumb li a {
-    color:  #81956f;
+    color: #0275d8;
     text-decoration: none;
 }
 ul.breadcrumb li a:hover {
-    color: #abc1b8;
+    color: #01447e;
     text-decoration: underline;
 }
 
@@ -207,7 +207,7 @@ ul.breadcrumb li a:hover {
 .books{
     width: 65%;
     margin-inline: auto;
-    height: 25vh;
+    height: 100vh;
 }
 .books-head{
     font-family: "Poppins", sans-serif;
