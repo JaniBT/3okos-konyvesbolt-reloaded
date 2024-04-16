@@ -43,3 +43,29 @@ buttons.forEach(button => {
         carouselImageChanging(button)
     })
 })
+
+let index = 0
+
+function slide() {
+    const items = document.querySelectorAll('.recommend_book')
+    const carouselWidth = document.querySelector('#book_wrapper').offsetWidth
+    const listBtn = document.querySelector('.list_rightBtn')
+
+    const totalWidth = 200 + 24
+    const marginleft = -(totalWidth / carouselWidth * 100)
+
+    console.log(marginleft)
+    if (index < items.length - 3) {
+        for (let i = index; i < index + 3; i++) {
+            items[i].style.marginLeft = marginleft + '%'
+            listBtn.innerHTML = `<i class="fa fa-angle-left"></i>`
+        }
+        index += 3
+    } else {
+        for (let i = 0; i < items.length; i++) {
+            items[i].style.marginLeft = '0'
+            listBtn.innerHTML = `<i class="fa fa-angle-right"></i>`
+        }
+        index = 0
+    }
+}

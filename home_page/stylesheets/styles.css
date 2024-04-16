@@ -11,6 +11,9 @@
     --secondary: #abc1b8;
     --accent: #93afae;
 
+    --greenish: #63a29d;
+    --greenishBackground: #e6f0ef;
+
     --bg-hover-gray: rgb(31 41 55 / 1);
 }
 
@@ -176,7 +179,7 @@ body {
 
 .main-content {
     margin-top: 1rem;
-    width: 65%;
+    width: 70%;
     margin-inline: auto;
 }
 
@@ -268,6 +271,10 @@ body {
     color: var(--clr-orange);
 }
 
+.line_under_text {
+    color: white;
+}
+
 /* Recommend section */
 
 .section_recommend {
@@ -299,7 +306,7 @@ body {
 }
 
 .full_list button {
-    padding: .5rem;
+    padding: .5rem .75rem;
     border: none;
     background-color: gray;
     color: var(--background);
@@ -315,15 +322,18 @@ body {
 }
 
 .recommend_books {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     
-    height: 550px;
+    height: 450px;
+
+    display: flex;
+    gap: 2rem;
 }
 
 .main_recommend_book {
-    width: 400px;
-    height: 550px;
+    width: 275px;
+    height: 400px;
 }
 
 .main_recommend_book img {
@@ -331,9 +341,80 @@ body {
     height: 75%;
 }
 
+.small_recommend_books {
+    display: flex;
+    gap: 1.5rem;
+    width: 75%;
+
+    overflow: hidden;
+}
+
 .recommend_book {
-    width: 250px;
-    height: 500px;
+    width: 200px;
+    height: 450px;
+
+    flex: 0 0 auto;
+    transition: margin-left 0.5s ease;
+}
+
+.recommend_book img {
+    display: block;
+    margin-inline: auto;
+}
+
+.recommend_book_title {
+    text-align: center;
+    margin-block: .5rem;
+}
+
+.recommend_book_hr {
+    color: white;
+    width: 65%;
+    margin-inline: auto;
+}
+
+.recommend_book_author {
+    text-align: center;
+    font-size: .85rem;
+    font-weight: 300;
+    margin-bottom: .4rem;
+}
+
+.recommend_book_type {
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+    font-size: .8rem;
+    margin-block: .3rem;
+    padding: .3rem .6rem;
+    border-radius: 100vw;
+    background-color: var(--greenishBackground);
+    color: var(--greenish);
+}
+
+.recommend_book_price {
+    text-align: center;
+    font-size: .9rem;
+    margin-block: .5rem;
+}
+
+.recommend_book_interested {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    padding: .5rem .75rem;
+    text-decoration: none;
+
+    color: var(--background);
+    background-color: var(--primary);
+
+    opacity: 1;
+    transition: all 0.1s linear;
+}
+
+.recommend_book_interested:hover {
+    opacity: .8;
+    transform: translateY(-5%);
 }
 
 .interestedBtn {
@@ -346,7 +427,7 @@ body {
     text-decoration: none;
     color: var(--background);
 
-    transition: all 0.3s linear;
+    transition: all 0.1s linear;
     opacity: 1;
 }
 
