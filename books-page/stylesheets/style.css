@@ -227,6 +227,7 @@ ul.breadcrumb li a:hover {
     font-family: var(--ff-poppins);
     font-weight: 400;
     padding-block: 1rem;
+    margin-bottom: 2rem;
 }
 .booklist-head{
     text-align: center;
@@ -362,11 +363,12 @@ ul.breadcrumb li a:hover {
     justify-content: space-evenly;
     font-size: 2rem;
 }
-.book_list {
+.book-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5rem;
+    width: 75%;
+    margin-inline: auto;
 }
 .recommend_book {
     width: 250px;
@@ -428,6 +430,10 @@ ul.breadcrumb li a:hover {
 .recommend_book_interested:hover {
     opacity: .8;
     transform: translateY(-5%);
+}
+.other-books{
+    margin-block: 2rem;
+    padding-block: 2rem;
 }
 .div-booklist{
     width: 65%;
@@ -519,6 +525,8 @@ ul.breadcrumb li a:hover {
     font-weight: bold;
 }
 .booklist-inner-div-third-btn{
+    display: block;
+    margin-inline: auto;
     font-size: 1.5rem;
     color: #fff;
     font-weight: bold;
@@ -533,6 +541,10 @@ ul.breadcrumb li a:hover {
 .booklist-inner-div-third-btn:hover{
     opacity: .8;
     transform: translateY(-5%);
+}
+.div-delivery{
+    margin-block: 3rem;
+    font-size: .85rem;
 }
 /* / Babel and others div */
 
