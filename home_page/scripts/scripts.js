@@ -1,3 +1,7 @@
+const fullYearSpan = document.querySelector('#fullYear')
+const date = new Date()
+fullYearSpan.innerHTML = date.getFullYear()
+
 function openDropdown(x) {
     x.classList.toggle('change')
     document.getElementById('dropdown-menu').classList.toggle('show')
@@ -44,28 +48,17 @@ buttons.forEach(button => {
     })
 })
 
-let index = 0
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
 
-function slide() {
-    const items = document.querySelectorAll('.recommend_book')
-    const carouselWidth = document.querySelector('#book_wrapper').offsetWidth
-    const listBtn = document.querySelector('.list_rightBtn')
+    pagination: {
+        el: '.swiper-pagination'
+    },
 
-    const totalWidth = 200 + 24
-    const marginleft = -(totalWidth / carouselWidth * 100)
-
-    console.log(marginleft)
-    if (index < items.length - 3) {
-        for (let i = index; i < index + 3; i++) {
-            items[i].style.marginLeft = marginleft + '%'
-            listBtn.innerHTML = `<i class="fa fa-angle-left"></i>`
-        }
-        index += 3
-    } else {
-        for (let i = 0; i < items.length; i++) {
-            items[i].style.marginLeft = '0'
-            listBtn.innerHTML = `<i class="fa fa-angle-right"></i>`
-        }
-        index = 0
-    }
-}
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+})

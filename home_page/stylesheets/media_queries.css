@@ -29,6 +29,15 @@
     .carousel {
         height: 320px;
     }
+    .section_unmissable_images {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section_unmissable_images {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 800px) {

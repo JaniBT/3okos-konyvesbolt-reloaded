@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Paginae Fascinantes - Könyvek</title>
     <link rel="stylesheet" href="./stylesheets/styles.css">
@@ -84,7 +85,6 @@
                 <h2>Legjobb Ajánlataink</h2>
                 <div class="full_list">
                     <p>Teljes Lista</p>
-                    <button class="list_rightBtn" onclick="slide()"><i class="fa fa-angle-right"></i></button>
                 </div>
             </div>
             <hr class="line_under_text">
@@ -97,66 +97,115 @@
                         <a href="#" class="interestedBtn">Érdekel</a>
                     </div>
                 </div>
-                <div class="small_recommend_books" id="book_wrapper">
-                    <div class="recommend_book">
-                        <img src="../assets/MiutánElvesztettelek.jpg" alt="Miután Elvesztettelek">
-                        <h4 class="recommend_book_title">Miután Elvesztettelek</h4>
-                        <p class="recommend_book_author">Jojo Moyes</p>
-                        <hr class="recommend_book_hr">
-                        <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                        <h5 class="recommend_book_price">Ár: 5790 Ft</h5>
-                        <a href="#" class="recommend_book_interested">Érdekel</a>
+                <div class="small_recommend_books swiper" id="book_wrapper">
+                    <div class="swiper-wrapper">
+                        <div class="recommend_book swiper-slide">
+                            <img src="../assets/MiutánElvesztettelek.jpg" alt="Miután Elvesztettelek">
+                            <h4 class="recommend_book_title">Miután Elvesztettelek</h4>
+                            <p class="recommend_book_author">Jojo Moyes</p>
+                            <hr class="recommend_book_hr">
+                            <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                            <h5 class="recommend_book_price">Ár: 5790 Ft</h5>
+                            <a href="#" class="recommend_book_interested">Érdekel</a>
+                        </div>
+                        <div class="recommend_book swiper-slide">
+                            <img src="../assets/BabelRFKuang.jpg" alt="Babel">
+                            <h4 class="recommend_book_title">Babel</h4>
+                            <p class="recommend_book_author">R. F. Kuang</p>
+                            <hr class="recommend_book_hr">
+                            <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                            <h5 class="recommend_book_price">Ár: 6290 Ft</h5>
+                            <a href="#" class="recommend_book_interested">Érdekel</a>
+                        </div>
+                        <div class="recommend_book swiper-slide">
+                            <img src="../assets/AmegegyszerEreje.jpg" alt="A még egyszer ereje">
+                            <h4 class="recommend_book_title">A "Még egyszer" ereje</h4>
+                            <p class="recommend_book_author">Ed Mylett</p>
+                            <hr class="recommend_book_hr">
+                            <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                            <h5 class="recommend_book_price">Ár: 4390 Ft</h5>
+                            <a href="#" class="recommend_book_interested">Érdekel</a>
+                        </div>
+                        <div class="recommend_book swiper-slide">
+                            <img src="../assets/AfegyelemAsors.jpg" alt="A Fegyelem A Sors">
+                            <h4 class="recommend_book_title">A Fegyelem a Sors</h4>
+                            <p class="recommend_book_author">Ryan Holiday</p>
+                            <hr class="recommend_book_hr">
+                            <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                            <h5 class="recommend_book_price">Ár: 6090 Ft</h5>
+                            <a href="#" class="recommend_book_interested">Érdekel</a>
+                        </div>
+                        <div class="recommend_book swiper-slide">
+                            <img src="../assets/FourthWing.jpg" alt="Negyedik szárny">
+                            <h4 class="recommend_book_title">Negyedik Szárny</h4>
+                            <p class="recommend_book_author">Rebecca Yarros</p>
+                            <hr class="recommend_book_hr">
+                            <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                            <h5 class="recommend_book_price">Ár: 8390 Ft</h5>
+                            <a href="#" class="recommend_book_interested">Érdekel</a>
+                        </div>
+                        <div class="recommend_book swiper-slide">
+                            <img src="../assets/HajnalCsillag.jpg" alt="Miután Elvesztettelek">
+                            <h4 class="recommend_book_title">Hajnal Csillag</h4>
+                            <p class="recommend_book_author">Karl Ove Knausgård</p>
+                            <hr class="recommend_book_hr">
+                            <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                            <h5 class="recommend_book_price">Ár: 4590 Ft</h5>
+                            <a href="#" class="recommend_book_interested">Érdekel</a>
+                        </div>
                     </div>
-                    <div class="recommend_book">
-                        <img src="../assets/MiutánElvesztettelek.jpg" alt="Miután Elvesztettelek">
-                        <h4 class="recommend_book_title">Miután Elvesztettelek</h4>
-                        <p class="recommend_book_author">Jojo Moyes</p>
-                        <hr class="recommend_book_hr">
-                        <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                        <h5 class="recommend_book_price">Ár: 5790 Ft</h5>
-                        <a href="#" class="recommend_book_interested">Érdekel</a>
-                    </div>
-                    <div class="recommend_book">
-                        <img src="../assets/MiutánElvesztettelek.jpg" alt="Miután Elvesztettelek">
-                        <h4 class="recommend_book_title">Miután Elvesztettelek</h4>
-                        <p class="recommend_book_author">Jojo Moyes</p>
-                        <hr class="recommend_book_hr">
-                        <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                        <h5 class="recommend_book_price">Ár: 5790 Ft</h5>
-                        <a href="#" class="recommend_book_interested">Érdekel</a>
-                    </div>
-                    <div class="recommend_book">
-                        <img src="../assets/MiutánElvesztettelek.jpg" alt="Miután Elvesztettelek">
-                        <h4 class="recommend_book_title">Miután Elvesztettelek</h4>
-                        <p class="recommend_book_author">Jojo Moyes</p>
-                        <hr class="recommend_book_hr">
-                        <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                        <h5 class="recommend_book_price">Ár: 5790 Ft</h5>
-                        <a href="#" class="recommend_book_interested">Érdekel</a>
-                    </div>
-                    <div class="recommend_book">
-                        <img src="../assets/MiutánElvesztettelek.jpg" alt="Miután Elvesztettelek">
-                        <h4 class="recommend_book_title">Miután Elvesztettelek</h4>
-                        <p class="recommend_book_author">Jojo Moyes</p>
-                        <hr class="recommend_book_hr">
-                        <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                        <h5 class="recommend_book_price">Ár: 5790 Ft</h5>
-                        <a href="#" class="recommend_book_interested">Érdekel</a>
-                    </div>
-                    <div class="recommend_book">
-                        <img src="../assets/MiutánElvesztettelek.jpg" alt="Miután Elvesztettelek">
-                        <h4 class="recommend_book_title">Miután Elvesztettelek</h4>
-                        <p class="recommend_book_author">Jojo Moyes</p>
-                        <hr class="recommend_book_hr">
-                        <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                        <h5 class="recommend_book_price">Ár: 5790 Ft</h5>
-                        <a href="#" class="recommend_book_interested">Érdekel</a>
-                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+            </div>
+        </section>
+        <section class="section_unmissable">
+            <div class="section_unmissable_title">
+                <h2>Kihagyhatatlan Könyvek</h2>
+            </div>
+            <div class="section_unmissable_images">
+                <a class="unmissable_div">
+                    <div class="unmissable_img">
+                    </div>
+                    <h3>Stephen King: <strong>A Ragyogás</strong></h3>
+                </a>
+                <a class="unmissable_div">
+                    <div class="unmissable_img2">
+                    </div>
+                    <h3>Dulai Péter: <strong>Amiért halál járt</strong></h3>
+                </a>
+                <a class="unmissable_div">
+                    <img src="../assets/BaljosTavasz.jpg" alt="Baljós Tavasz">
+                    <h3>Agatha Christie: <strong>Baljós Tavasz</strong></h3>
+                </a>
+            </div>
+        </section>
+        <section class="section_discount">
+            <div class="section_dicount_title">
+                <h2></h2>
             </div>
         </section>
     </main>
 
+    <footer class="footer">
+        <img id="footer-img" src="../assets/logo.png" alt="logo">
+        <ul class="footer-list">
+            <li class="footer-liItem"><a title="Csordás János" href="https://github.com/JaniBT" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="footer-liItem"><a title="Vásári András" href="https://github.com/arris05" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="footer-liItem"><a title="Koós Balázs Bence" href="https://github.com/koosbalazsbence" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <!-- <li><a href="https://github.com/koosbalazsbence" target="_blank"><img class="footer-img" src="../assets/github.png" alt="github-logo-link" title="@koosbalazsbence"></a></li> -->
+        </ul>
+        <hr id="footer-hr">
+        <ul class="footer-list_down">
+            <li class="footer-liItem"><span id="fullYear"></span> &copy; Paginae Fascinantes - Minden jog fenntartva</li>
+            <li class="footer-liItem">A 3okos tulajdona</li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/scripts.js"></script>
 </body>
 </html>
