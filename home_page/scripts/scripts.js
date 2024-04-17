@@ -54,32 +54,52 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
 
     pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true
     },
 
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        950: {
+            slidesPerView: 2
+        },
+        1300: {
+            slidesPerView: 3
+        }
+    }
 })
 
 const discountDivs = document.querySelectorAll('.discount_div')
 const previewImage = document.getElementById('previewImage');
 discountDivs.forEach((disc, index) => {
     disc.addEventListener('mouseover', () => {
+        previewImage.style.opacity = '0'
         removeActiveClasses()
-
+        
+        
         disc.classList.add('active')
 
-        const newImageSrc = disc.getAttribute('data-image');
-        previewImage.src = newImageSrc;
+        const newImageSrc = disc.getAttribute('data-image')
+        previewImage.src = newImageSrc
+        previewImage.style.opacity = '1'
+
     })
     disc.addEventListener('mouseleave', () => {
+        previewImage.style.opacity = '0'
         removeActiveClasses()
 
-        if (index === discountDivs.length - discountDivs.length || index === discountDivs.length - 3 || index === discountDivs.length - 2 || index === discountDivs.length - 1) {
+        if (index <= discountDivs.length) {
             discountDivs[0].classList.add('active')
             previewImage.src = '../assets/book-gyilkossag.png'
+            previewImage.style.opacity = '1'
         }
         
     })

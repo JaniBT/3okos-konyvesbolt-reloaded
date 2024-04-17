@@ -28,6 +28,8 @@
 *{
     scrollbar-width: thin;
     scrollbar-color: #69686a var(--white);
+
+    scroll-behavior: smooth;
 }
 *::-webkit-scrollbar {
     width: 16px;
@@ -550,7 +552,7 @@ body {
     width: 100%;
     margin-inline: auto;
     display: flex;
-    gap: 6rem;
+    gap: 5rem;
     margin-block: 2rem;
 }
 
@@ -579,12 +581,32 @@ body {
 
     position: relative;
     
+    transition: all .5s ease;
+}
+
+.discount_div::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+    border-left: 18px solid var(--background);
+
+    transition: all .5s ease;
 }
 
 .discount_div:hover {
 
     .lil_title {
         text-decoration: underline;
+    }
+
+    &::after {
+        border-left-color: var(--clr-oily-skin);
     }
 }
 
@@ -593,14 +615,17 @@ body {
 }
 
 .discount_images {
-    width: 50%;
+    width: 60%;
     height: 224px;
-    
+
 }
 
 .imagePreview {
     width: 100%;
     height: 100%;
+
+    opacity: 1;
+    transition: all 0.5s ease;
 }
 
 .discount {
@@ -612,17 +637,8 @@ body {
     background-color: var(--clr-oily-skin);
 }
 
-.active::after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 0;
-    height: 0;
-    border-top: 27px solid transparent;
-    border-bottom: 27px solid transparent;
-    border-left: 18px solid var(--clr-oily-skin);
+.active::after {
+    border-left-color: var(--clr-oily-skin);
 }
 
 .horizontal-line {
