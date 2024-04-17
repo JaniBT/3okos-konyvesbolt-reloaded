@@ -348,7 +348,6 @@ ul.breadcrumb li a:hover {
 .books{
     width: 65%;
     margin-inline: auto;
-    height: 25vh;
 }
 .books-head{
     font-family: var(--ff-poppins);
@@ -356,11 +355,12 @@ ul.breadcrumb li a:hover {
     margin: 0;
 }
 .books-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0;
     font-family: var(--ff-poppins);
     list-style: none;
-    display: flex;
-    justify-content: space-evenly;
     font-size: 2rem;
 }
 .book-list {
