@@ -81,21 +81,19 @@ const discountDivs = document.querySelectorAll('.discount_div')
 const previewImage = document.getElementById('previewImage');
 discountDivs.forEach((disc, index) => {
     disc.addEventListener('mouseover', () => {
-        previewImage.style.opacity = '0'
+
         removeActiveClasses()
-        
         
         disc.classList.add('active')
-
         const newImageSrc = disc.getAttribute('data-image')
         previewImage.src = newImageSrc
+        
         previewImage.style.opacity = '1'
-
     })
     disc.addEventListener('mouseleave', () => {
-        previewImage.style.opacity = '0'
-        removeActiveClasses()
 
+        removeActiveClasses()
+        
         if (index <= discountDivs.length) {
             discountDivs[0].classList.add('active')
             previewImage.src = '../assets/book-gyilkossag.png'

@@ -3,6 +3,7 @@
     --ff-poppins: 'Poppins', sans-serif;
 
     --textTransition: color 0.3s ease;
+    --transitionEffect: all .3s ease;
 
     --clr-orange: rgb(249 115 22 / 1);
     --text: #131610;
@@ -581,7 +582,7 @@ body {
 
     position: relative;
     
-    transition: all .5s ease;
+    transition: var(--transitionEffect);
 }
 
 .discount_div::after{
@@ -596,7 +597,7 @@ body {
     border-bottom: 27px solid transparent;
     border-left: 18px solid var(--background);
 
-    transition: all .5s ease;
+    transition: var(--transitionEffect);
 }
 
 .discount_div:hover {
@@ -625,7 +626,6 @@ body {
     height: 100%;
 
     opacity: 1;
-    transition: all 0.5s ease;
 }
 
 .discount {
@@ -645,6 +645,20 @@ body {
     color: var(--background);
     display: block;
     border: .01rem solid #D3D3D3;
+    margin-inline: auto;
+}
+
+.book_for_kid {
+    width: 100%;
+    margin-block: 3.5rem;
+}
+
+.KidBook {
+    width: 90%;
+    height: 350px;
+    background: url('../../assets/GyermekKönyv.gif');
+    background-size: cover;
+    background-position: center;
     margin-inline: auto;
 }
 
