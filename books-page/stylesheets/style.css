@@ -194,9 +194,9 @@ ul.breadcrumb li a:hover {
     font-weight: 400;
     margin: 0;
 }
-.category-list{
-
-}
+/* .category-list{
+    list-style: none;
+} */
 .category-list-link{
     text-decoration: none;
     color: #131610;
@@ -210,31 +210,31 @@ ul.breadcrumb li a:hover {
 /* / Category Div */
 
 /* Literature Div */
-.div-literature{
+.div-booklist{
     width: 65%;
     margin-inline: auto;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     padding-block: 1rem;
 }
-.literature-head{
+.booklist-head{
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 2rem;
     margin: 0;
 }
-.literature-list{
-
+.booklist-list{
+    list-style: none;
 }
-.literature-list-link{
+.booklist-list-link{
     text-decoration: none;
     color: #131610;
 }
-.category-list-link:hover{
+.booklist-list-link:hover{
     color: #81956f;
 }
-.category-list li::marker{
+.booklist-list li::marker{
     color: #81956f;
 }
 /* / Literature Div */
