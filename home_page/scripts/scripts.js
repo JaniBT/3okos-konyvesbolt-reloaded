@@ -92,3 +92,4 @@ function removeActiveClasses() {
 }
 
 discountDivs[0].classList.add('active')
+previewImage.src = '../assets/book-gyilkossag.png'
