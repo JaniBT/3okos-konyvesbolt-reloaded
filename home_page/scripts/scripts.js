@@ -62,3 +62,33 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev'
     },
 })
+
+const discountDivs = document.querySelectorAll('.discount_div')
+const previewImage = document.getElementById('previewImage');
+discountDivs.forEach((disc, index) => {
+    disc.addEventListener('mouseover', () => {
+        removeActiveClasses()
+
+        disc.classList.add('active')
+
+        const newImageSrc = disc.getAttribute('data-image');
+        previewImage.src = newImageSrc;
+    })
+    disc.addEventListener('mouseleave', () => {
+        removeActiveClasses()
+
+        if (index === discountDivs.length - discountDivs.length || index === discountDivs.length - 3 || index === discountDivs.length - 2 || index === discountDivs.length - 1) {
+            discountDivs[0].classList.add('active')
+            previewImage.src = '../assets/book-gyilkossag.png'
+        }
+        
+    })
+})
+
+function removeActiveClasses() {
+    discountDivs.forEach(disc => {
+        disc.classList.remove('active')
+    })
+}
+
+discountDivs[0].classList.add('active')
