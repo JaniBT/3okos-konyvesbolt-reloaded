@@ -275,7 +275,6 @@ ul.breadcrumb li a:hover {
     flex-wrap: wrap;
     gap: 5rem;
 }
-
 .recommend_book {
     width: 250px;
     height: 450px;
@@ -283,33 +282,27 @@ ul.breadcrumb li a:hover {
     flex: 0 0 auto;
     transition: margin-left 0.5s ease;
 }
-
 .recommend_book img {
     display: block;
     margin-inline: auto;
     height: 220px;
 }
-
-
 .recommend_book_title {
     text-align: center;
     margin-block: .5rem;
 }
-
 .recommend_book_author {
     text-align: center;
     font-size: .85rem;
     font-weight: 300;
     margin-bottom: .4rem;
 }
-
 .recommend_book_hr {
     color: white;
     display: block;
     width: 10%;
     margin-inline: auto;
 }
-
 .recommend_book_type {
     width: fit-content;
     margin-inline: auto;
@@ -321,13 +314,11 @@ ul.breadcrumb li a:hover {
     background-color: var(--greenishBackground);
     color: var(--greenish);
 }
-
 .recommend_book_price {
     text-align: center;
     font-size: .9rem;
     margin-block: .5rem;
 }
-
 .recommend_book_interested {
     display: block;
     width: fit-content;
@@ -341,12 +332,10 @@ ul.breadcrumb li a:hover {
     opacity: 1;
     transition: all 0.1s linear;
 }
-
 .recommend_book_interested:hover {
     opacity: .8;
     transform: translateY(-5%);
 }
-
 .div-booklist{
     width: 65%;
     margin-inline: auto;
@@ -361,4 +350,3 @@ ul.breadcrumb li a:hover {
     font-size: 2rem;
     margin: 0;
 }
-
