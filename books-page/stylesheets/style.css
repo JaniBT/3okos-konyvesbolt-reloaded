@@ -37,6 +37,14 @@ html{
     border-radius: 10px;
     border: 3px dashed var(--white);
 }
+img{  
+    user-drag: none;  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 body{
     margin: 0;
     padding: 0;
@@ -356,7 +364,16 @@ ul.breadcrumb li a:hover {
 
 /* Babel div */
 .babel-div{
-    height: 100vh;
+    display: flex;
+    padding: 1.5rem;
+}
+.babel-img{
+    width: 300px;
+}
+.babel-inner-div-second{
+    padding: .5rem;
+    margin-inline: 3rem;
+    border: 1px dotted red
 }
 /* / Babel div */
 

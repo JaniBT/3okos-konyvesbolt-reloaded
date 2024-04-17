@@ -6,9 +6,11 @@
     .notShowing {
         display: block;
     }
-
     .main-content {
         width: 85%;
+    }
+    .babel-img{
+        width: 250px;
     }
 }
 
@@ -16,27 +18,35 @@
     .middle-navbar {
         display: none;
     }
-
     .dropdown-menus {
         display: block;
     }
-
     .hamburger-container {
         display: block;
-    }
-    
+    } 
     .main-content {
         width: 95%;
     }
-
     .carousel {
         width: 100%;
         height: 220px;
+    }
+    .babel-div{
+        padding: .35rem;
+    }
+    .babel-img{
+        width: 200px;
     }
 }
 
 @media screen and (max-width: 440px) {
     .carousel {
         height: 150px;
+    }
+    .babel-div{
+        padding: .35rem;
+    }
+    .babel-img{
+        width: 150px;
     }
 }
