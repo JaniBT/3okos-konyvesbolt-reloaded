@@ -354,6 +354,12 @@ ul.breadcrumb li a:hover {
 }
 /* / Books */
 
+/* Babel div */
+.babel-div{
+    height: 100vh;
+}
+/* / Babel div */
+
 /* Footer */
 .footer{
     background: #353535;
@@ -415,8 +421,8 @@ ul.breadcrumb li a:hover {
 
 /* hr */
 .horizontal-line{
-    color: white;
     display: block;
     border: .01rem solid #D3D3D3;
     margin-inline: auto;
 }
+/* hr */
