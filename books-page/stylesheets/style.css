@@ -194,9 +194,9 @@ ul.breadcrumb li a:hover {
     font-weight: 400;
     margin: 0;
 }
-/* .category-list{
-    list-style: none;
-} */
+.category-list{
+    font-size: 1.25rem;
+}
 .category-list-link{
     text-decoration: none;
     color: #131610;
