@@ -11,6 +11,9 @@
     --textTransition: color 0.3s ease;
     --clr-orange: rgb(249 115 22 / 1);
     --bg-hover-gray: rgb(31 41 55 / 1);
+    --greenish: #63a29d;
+    --greenishBackground: #e6f0ef;
+    --bg-hover-gray: rgb(31 41 55 / 1);
 }
 html{
     box-sizing: border-box;
@@ -239,6 +242,97 @@ ul.breadcrumb li a:hover {
 }
 /* / Literature Div */
 
+/* Recommened books */
+.recommend_books {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    height: 450px;
+
+    display: flex;
+    gap: 2rem;
+}
+.main_recommend_book {
+    width: 275px;
+    height: 400px;
+}
+.main_recommend_book img {
+    width: 100%;
+    height: 75%;
+}
+.small_recommend_books {
+    display: flex;
+    gap: 1.5rem;
+    width: calc(100% - 275px);
+
+    overflow: hidden;
+}
+.swiper {
+    width: calc(100% - 275px);
+    height: 450px;
+}
+.recommend_book {
+    width: 200px;
+    height: 450px;
+
+    flex: 0 0 auto;
+    transition: margin-left 0.5s ease;
+}
+.recommend_book img {
+    display: block;
+    margin-inline: auto;
+    height: 220px;
+}
+.recommend_book_title{
+    text-align: center;
+    margin-block: .5rem;
+}
+.recommend_book_hr{
+    color: white;
+    display: block;
+    width: 15%;
+    border: 1px solid #888;
+    margin-inline: auto;
+}
+.recommend_book_author {
+    text-align: center;
+    font-size: .85rem;
+    font-weight: 300;
+    margin-bottom: .4rem;
+}
+.recommend_book_type {
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+    font-size: .8rem;
+    margin-block: .3rem;
+    padding: .3rem .6rem;
+    border-radius: 100vw;
+    background-color: var(--greenishBackground);
+    color: var(--greenish);
+}
+.recommend_book_price {
+    text-align: center;
+    font-size: .9rem;
+    margin-block: .5rem;
+}
+.recommend_book_interested {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    padding: .5rem .75rem;
+    text-decoration: none;
+    color: var(--background);
+    background-color: var(--primary);
+    opacity: 1;
+    transition: all 0.1s linear;
+}
+.recommend_book_interested:hover {
+    opacity: .8;
+    transform: translateY(-5%);
+}
+/* / Recommened books */
+
 /* Books */
 .books{
     width: 65%;
@@ -273,16 +367,24 @@ ul.breadcrumb li a:hover {
     margin-block: 3rem 0;
 }
 .footer-list{
+    display: flex;
+    gap: 2rem;
     padding: 0;
     text-align: center;
     list-style: none;
+    margin-bottom: 1.5rem;
 }
-.footer-link{
+.footer-link i{
     text-decoration: none;
     color: #C2C2C2;
+    font-size: 1.3rem;
+    padding: .5rem .6rem;
+    border-radius: 50%;
+    border: 1px solid #C2C2C2;
 }
-.footer-link:hover{
-    color: #fff;
+.footer-link i:hover{
+    color: var(--greenish);
+    background-color: var(--greenishBackground);
     transition: 0.5s ease;
 }
 #footer-hr{
@@ -303,4 +405,18 @@ ul.breadcrumb li a:hover {
     width: 150px;
     height: 150px;
 }
+.footer-list_down {
+    list-style: none;
+    text-align: center;
+    color: var(--background);
+    margin-top: 1rem;
+}
 /* / Footer */
+
+/* hr */
+.horizontal-line{
+    color: white;
+    display: block;
+    border: .01rem solid #D3D3D3;
+    margin-inline: auto;
+}
