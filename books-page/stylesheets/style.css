@@ -8,6 +8,7 @@
     --ff-josefin: 'Josefin Slab', serif;
     --ff-poppins: 'Poppins', sans-serif;
     --ff-rubik: 'Rubik', sans-serif;
+    --ff-times: 'Times New Roman', Times, serif;
     --textTransition: color 0.3s ease;
     --clr-orange: rgb(249 115 22 / 1);
     --bg-hover-gray: rgb(31 41 55 / 1);
@@ -37,8 +38,7 @@ html{
     border-radius: 10px;
     border: 3px dashed var(--white);
 }
-img{  
-    user-drag: none;  
+img{
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -196,12 +196,12 @@ ul.breadcrumb li a:hover {
 .div-category{
     width: 65%;
     margin-inline: auto;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--ff-poppins);
     font-weight: 400;
     padding-block: 1rem;
 }
 .category-head{
-    font-family: "Poppins", sans-serif;
+    font-family: var(--ff-poppins);
     font-weight: 400;
     margin: 0;
 }
@@ -224,13 +224,13 @@ ul.breadcrumb li a:hover {
 .div-booklist{
     width: 65%;
     margin-inline: auto;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--ff-poppins);
     font-weight: 400;
     padding-block: 1rem;
 }
 .booklist-head{
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--ff-poppins);
     font-weight: 400;
     font-size: 2rem;
     margin: 0;
@@ -348,13 +348,13 @@ ul.breadcrumb li a:hover {
     height: 25vh;
 }
 .books-head{
-    font-family: "Poppins", sans-serif;
+    font-family: var(--ff-poppins);
     font-weight: 400;
     margin: 0;
 }
 .books-list{
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--ff-poppins);
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -362,18 +362,62 @@ ul.breadcrumb li a:hover {
 }
 /* / Books */
 
-/* Babel div */
-.babel-div{
+/* Babel and others div */
+.booklist-div{
     display: flex;
-    padding: 1.5rem;
-}
-.babel-img{
-    width: 300px;
-}
-.babel-inner-div-second{
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: .5rem;
-    margin-inline: 3rem;
-    border: 1px dotted red
+    /* border: 1px dotted red; */
+    /* height: 100vh; */
+}
+.booklist-img{
+    position: sticky;
+    top: 1rem;
+    width: 300px;
+    padding: 0;
+}
+.description{
+    display: block;
+    font-size: .85rem;
+}
+.booklist-inner-div-first{
+    /* border: 1px dotted red; */
+}
+.booklist-inner-div-second{
+    padding: 1.5rem;
+    margin: 0;
+    width: 30rem;
+    /* border: 1px dotted red; */
+}
+.booklist-second-heading{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #131610;
+}
+.booklist-second-heading:hover{
+    color: #81956f;
+}
+.booklist-third-heading{
+    font-size: 1.75rem;
+    font-family: var(--ff-times);
+}
+.booklist-inner-div-third-p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--ff-times);
+    font-weight: bold;
+}
+.booklist-inner-div-third-btn{
+    font-size: 1.5rem;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+    background: var(--primary);
+    border: 0;
+    width: 9rem;
+    height: 4rem;
+    cursor: pointer;
 }
 /* / Babel div */
 
