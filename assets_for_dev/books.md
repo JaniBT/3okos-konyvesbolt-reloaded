@@ -42,7 +42,7 @@
     Gyilkosság a panel tetején; Dulai Péter; 2023 ✅
     3 912 Ft
     Ismeretterjesztő
-    
+
     Amiért halál járt - Utolsó kivégzettek a Kádár-korszakban; Dulai Péter; 2023 ✅
     3 490 Ft
     Ismeretterjesztő
