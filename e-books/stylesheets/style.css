@@ -153,7 +153,6 @@ body{
 .show {
     display: block;
 }
-
 .breadcrumb{
     width: 65%;
     margin-inline: auto;
@@ -164,7 +163,8 @@ ul.breadcrumb {
 }
 ul.breadcrumb li {
     display: inline;
-    font-size: 18px;
+    font-size: 1rem;
+    font-family: var(--ff-rubik);
 }
 ul.breadcrumb li+li:before {
     padding: 8px;
@@ -179,7 +179,6 @@ ul.breadcrumb li a:hover {
     color: #abc1b8;
     text-decoration: underline;
 }
-
 .div-category{
     width: 65%;
     margin-inline: auto;

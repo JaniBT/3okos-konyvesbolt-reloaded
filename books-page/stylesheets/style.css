@@ -17,6 +17,7 @@
 }
 html{
     box-sizing: border-box;
+    font-family: var(--ff-poppins);
 }
 *{
     user-select: none;
