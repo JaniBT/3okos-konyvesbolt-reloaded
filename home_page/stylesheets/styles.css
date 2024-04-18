@@ -208,6 +208,8 @@ body {
     background-color: var(--background);
     box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     
     z-index: 999;
 
@@ -246,6 +248,54 @@ body {
 
 .flex-close h3 {
     font-family: var(--ff-josefin);
+}
+
+.allBooks {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 500px);
+    overflow-y: scroll;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background);
+
+    list-style: none;
+}
+
+.allBooks li {
+    padding: .8rem;
+    margin: 6px;
+
+    border: 1px solid var(--greenish);
+    border-left: 4px solid var(--greenish);
+    border-radius: .5rem;
+
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.allBooks li:hover {
+    background-color: var(--greenishBackground);
+}
+
+.allBooks a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.book_listItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_listItems div h4 {
+    font-size: 1.1rem;
+}
+
+.book_listItems:nth-child(1) p {
+    font-size: .8rem;
 }
 
 /* Navbar end */

@@ -125,6 +125,53 @@ function closeSearchBar() {
 
 const searchInput = document.querySelector('#searchInput')
 
+async function renderBooks(data) {
+    let state = ``
+    for (const bookDatas of data) {
+        state += 
+        `
+            <li>
+                <a href="#">
+                    <div class="book_listItems">
+                        <div>
+                            <h4>${bookDatas.name}</h4>
+                            <p>${bookDatas.author}</p>
+                        </div>
+                        <div>
+                            <p>${bookDatas.release}</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        `
+    }
+
+    return state
+}
+
+async function fetchData() {
+    const response = await fetch('../../booksJSON/books.json')
+    const data = await response.json()
+
+    return data
+}
+
+let storedBooks = undefined
+
+window.onload = async () => {
+    const result = await fetchData()
+    storedBooks = result
+}
+
 searchInput.addEventListener('focus', async () => {
-    const response = await fetch('../../booksJSON')
+
+    let state = `<ul class="allBooks">${await renderBooks(storedBooks)}</ul>`
+
+    const resultDiv = document.querySelector('#renderId')
+    resultDiv.innerHTML += state
+
+    searchInput.addEventListener('blur', () => {
+        resultDiv.innerHTML = ""
+    })
 })
+
