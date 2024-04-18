@@ -111,3 +111,20 @@ function removeActiveClasses() {
 
 discountDivs[0].classList.add('active')
 previewImage.src = '../assets/book-gyilkossag.png'
+
+function toggleSearchBar() {
+    const searchBar = document.getElementById("searchBar")
+    searchBar.style.transform = "translate(-50%, -3%)"
+    // searchBar.style.transform = "translate(-50%, -300%)"
+}
+
+function closeSearchBar() {
+    const searchBar = document.getElementById("searchBar")
+    searchBar.style.transform = "translate(-50%, -300%)"
+}
+
+const searchInput = document.querySelector('#searchInput')
+
+searchInput.addEventListener('focus', async () => {
+    const response = await fetch('../../booksJSON')
+})

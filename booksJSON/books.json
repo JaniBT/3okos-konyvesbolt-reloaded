@@ -1,5 +1,87 @@
-{
-    "books": {
-        
+[
+    {
+        "name": "Bábel",
+        "author": "R. F. Kuang",
+        "release": 2023
+    },
+    {
+        "name": "Még Egyszer ereje",
+        "author": "Ed Mylett",
+        "release": 2023
+    },
+    {
+        "name": "A fegyelem a sors",
+        "author": "Ryan Holiday",
+        "release": 2023
+    },
+    {
+        "name": "Tönkretett figyelem",
+        "author": "Johann Hari",
+        "release": 2023
+    },
+    {
+        "name": "A szerelem 8 szabálya",
+        "author": "Jay Shetty",
+        "release": 2023
+    },
+    {
+        "name": "Belső fényünk",
+        "author": "Michelle Obama",
+        "release": 2023
+    },
+    {
+        "name": "Miért nem mondta ezt nekem senki?",
+        "author": "Dr. Julie Smith",
+        "release": 2023
+    },
+    {
+        "name": "Tedd magad hasznossá",
+        "author": "Arnold Schwarzenegger",
+        "release": 2023
+    },
+    {
+        "name": "Negyedik szárny",
+        "author": "Rebecca Yarros",
+        "release": 2024
+    },
+    {
+        "name": "A kreatív folyamat",
+        "author": "Rick Rubin",
+        "release": 2023
+    },
+    {
+        "name": "Gyilkosság a panel tetején",
+        "author": "Dulai Péter",
+        "release": 2023
+    },
+    {
+        "name": "Amiért halál járt",
+        "author": "Dulai Péter",
+        "release": 2023
+    },
+    {
+        "name": "Hajnalcsillag",
+        "author": "Karl Ove Knausgård",
+        "release": 2023
+    },
+    {
+        "name": "Senkiháza",
+        "author": "Vida Gábor",
+        "release": 2023
+    },
+    {
+        "name": "Sokszor nem halunk meg",
+        "author": "Tompa Andrea",
+        "release": 2023
+    },
+    {
+        "name": "Az",
+        "author": "Stephen King",
+        "release": 1986
+    },
+    {
+        "name": "Ha az erdő beszélni tudna",
+        "author": "Zelei Anna",
+        "release": 2024
     }
-}
+]

@@ -33,7 +33,7 @@
             
         </nav>
         <div class="search_div">
-            <i class="fa fa-search"></i>
+            <i class="fa fa-search" id="bigSearchBtn" onclick="toggleSearchBar()"></i>
         </div>
 
         <div class="dropdown-menus">
@@ -47,10 +47,18 @@
                 <a href="../books-page/books.html">Könyvek</a>
                 <a href="../e-books/ebooks.html">E-Könyvek</a>
                 <a href="../stephen_king/stephen_king.html">Stephen King</a>
-                <a href="javascript:void(0)" onclick="openSearchBar()"><i class="fa fa-search"></i> Keresés</a>
+                <a href="javascript:void(0)" onclick="toggleSearchBar()"><i class="fa fa-search"></i> Keresés</a>
             </div>
         </div>
     </header>
+
+    <div class="search-bar" id="searchBar">
+        <div class="flex-close">
+            <h3>Könyv keresése...</h3>
+            <span class="close-button" onclick="closeSearchBar()">&#10006;</span>
+        </div>
+        <input type="text" placeholder="Keresés..." id="searchInput">
+    </div>
 
     <main class="main-content">
         <section aria-label="Könyv ajánlatok">
