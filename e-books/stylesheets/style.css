@@ -1,6 +1,7 @@
 :root {
     --ff-josefin: 'Josefin Slab', serif;
     --ff-poppins: 'Poppins', sans-serif;
+    --ff-rubik: 'Rubik', sans-serif;
     --textTransition: color 0.3s ease;
     --clr-orange: rgb(249 115 22 / 1);
     --text: #131610;
@@ -192,7 +193,7 @@ ul.breadcrumb li a:hover {
     margin: 0;
 }
 .category-list{
-
+    font-size: 1.25rem;
 }
 .category-list-link{
     text-decoration: none;
