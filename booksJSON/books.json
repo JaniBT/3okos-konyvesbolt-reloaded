@@ -2,7 +2,9 @@
     {
         "name": "Bábel",
         "author": "R. F. Kuang",
-        "release": 2023
+        "release": 2023,
+        "hrefHome": "../books-page/babel.html",
+        "hrefBooks": "./babel.html"
     },
     {
         "name": "Még Egyszer ereje",
@@ -37,12 +39,16 @@
     {
         "name": "Tedd magad hasznossá",
         "author": "Arnold Schwarzenegger",
-        "release": 2023
+        "release": 2023,
+        "hrefHome": "../books-page/teddMagadHasznossa.html",
+        "hrefBooks": "./teddMagadHasznossa.html"
     },
     {
         "name": "Negyedik szárny",
         "author": "Rebecca Yarros",
-        "release": 2024
+        "release": 2024,
+        "hrefHome": "../books-page/negyedikSzarny.html",
+        "hrefBooks": "./negyedikSzarny.html"
     },
     {
         "name": "A kreatív folyamat",
@@ -62,17 +68,23 @@
     {
         "name": "Hajnalcsillag",
         "author": "Karl Ove Knausgård",
-        "release": 2023
+        "release": 2023,
+        "hrefHome": "../books-page/hajnalcsillag.html",
+        "hrefBooks": "./hajnalcsillag.html"
     },
     {
         "name": "Senkiháza",
         "author": "Vida Gábor",
-        "release": 2023
+        "release": 2023,
+        "hrefHome": "../books-page/senkihaza.html",
+        "hrefBooks": "./senkihaza.html"
     },
     {
         "name": "Sokszor nem halunk meg",
         "author": "Tompa Andrea",
-        "release": 2023
+        "release": 2023,
+        "hrefHome": "../books-page/sokszorNemHalunkMeg.html",
+        "hrefBooks": "./sokszorNemHalunkMeg.html"
     },
     {
         "name": "Az",
@@ -82,6 +94,31 @@
     {
         "name": "Ha az erdő beszélni tudna",
         "author": "Zelei Anna",
+        "release": 2024
+    },
+    {
+        "name": "Help Wanted",
+        "author": "Adelle Waldman",
+        "release": 2024
+    },
+    {
+        "name": "Miután Elvesztettelek",
+        "author": "Jojo Moyes",
+        "release": 2015
+    },
+    {
+        "name": "A ragyogás",
+        "author": "Stephen King",
+        "release": 1977
+    },
+    {
+        "name": "Baljós tavasz",
+        "author": "Agatha Christie",
+        "release": 2024
+    },
+    {
+        "name": "Világkóstoló",
+        "author": "Kalas Györgyi",
         "release": 2024
     }
 ]

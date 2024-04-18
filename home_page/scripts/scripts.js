@@ -112,6 +112,8 @@ function removeActiveClasses() {
 discountDivs[0].classList.add('active')
 previewImage.src = '../assets/book-gyilkossag.png'
 
+// Search bar funkcionalitás innen indul:
+
 function toggleSearchBar() {
     const searchBar = document.getElementById("searchBar")
     searchBar.style.transform = "translate(-50%, -3%)"

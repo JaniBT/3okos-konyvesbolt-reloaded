@@ -67,22 +67,22 @@
     4 456 Ft
     Ismeretterjesztő
 
-    Help Wanted; Adelle Waldman; 2024
+    Help Wanted; Adelle Waldman; 2024 ✅
     2 990 Ft
     Irodalom
 
-    Miután Elvesztettelek; Jojo Moyes; 2015
+    Miután Elvesztettelek; Jojo Moyes; 2015 ✅
     5 790 Ft
     Irodalom
 
-    A ragyogás; Stephen King; 1977
+    A ragyogás; Stephen King; 1977 ✅
     3 290 Ft
     Irodalom
 
-    Baljós tavasz; Agatha Christie; 2024
+    Baljós tavasz; Agatha Christie; 2024 ✅
     5 699 Ft
     Irodalom
 
-    Világkóstoló; Kalas Györgyi; 2024
+    Világkóstoló; Kalas Györgyi; 2024 ✅
     4 990 Ft
     Ismeretterjesztő
