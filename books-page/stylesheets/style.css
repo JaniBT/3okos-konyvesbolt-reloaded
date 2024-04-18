@@ -220,6 +220,15 @@ ul.breadcrumb li a:hover {
 }
 /* / Category Div */
 
+.boxhit-head{
+    text-align: center;
+    font-family: var(--ff-poppins);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
 /* Literature Div */
 .div-booklist{
     width: 65%;
