@@ -458,6 +458,11 @@ ul.breadcrumb li a:hover {
     font-size: 2rem;
     margin: 0;
 }
+.span-delivery{
+    display: block;
+    text-align: center;
+    color: #A9A9A9
+}
 /* / Books */
 
 /* Babel and others div */
