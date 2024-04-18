@@ -12,6 +12,9 @@
     .babel-img{
         width: 250px;
     }
+    .booklist-img{
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -31,10 +34,10 @@
         width: 100%;
         height: 220px;
     }
-    .babel-div{
+    .booklist-div{
         padding: .35rem;
     }
-    .babel-img{
+    .booklist-img{
         width: 200px;
     }
 }
@@ -43,10 +46,10 @@
     .carousel {
         height: 150px;
     }
-    .babel-div{
+    .booklist-div{
         padding: .35rem;
     }
-    .babel-img{
+    .booklist-img{
         width: 150px;
     }
 }
