@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/media_queries.css">
+
+    <title>A "Még egyszer" ereje - Ed Mylett</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="title_div">
+            <h1><span>P</span>aginae Fascinantes</h1>
+        </div>
+        <nav class="middle-navbar">
+            <ul>
+                <li><a href="../home_page/index.html">Kezdőlap</a></li>
+                <li><a href="../books-page/books.html">Könyvek</a></li>
+                <li><a href="../e-books/ebooks.html">E-Könyvek</a></li>
+                <li><a href="../stephen_king/stephen_king.html">Stephen King</a></li>
+                <li class="notShowing">
+                    <button type="button" class="searchBtn"><i class="fa fa-search"></i></button>
+                </li>
+            </ul>
+        </nav>
+        <div class="search_div">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="dropdown-menus">
+            <div class="hamburger-container" onclick="openDropdown(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="dropdown-menu" class="menus">
+                <a href="../home_page/index.html">Kezdőlap</a>
+                <a href="../books-page/books.html">Könyvek</a>
+                <a href="../e-books/ebooks.html">E-Könyvek</a>
+                <a href="../stephen_king/stephen_king.html">Stephen King</a>
+                <a href="javascript:void(0)" onclick="openSearchBar()"><i class="fa fa-search"></i> Keresés</a>
+            </div>
+        </div>
+    </header>
+    <!-- **Header** -->
+
+    <!-- Breadcrumb  -->
+    <ul class="breadcrumb">
+        <li><a href="../home_page/index.html">Kezdőlap</a></li>
+        <li><a href="../e-books/ebooks.html">E-könyvek</a></li>
+        <li><a href="../e-books/ismeretterjeszto.html">Ismeretterjesztő</a></li>
+        <li>A "Még egyszer" ereje - Ed Mylett</li>
+    </ul>
+    <!-- **Breadcrumb**  -->
+
+    <!-- Books list -->
+    <div class="div-booklist">
+        <hr class="horizontal-line">
+        <div class="booklist-div">
+            <div class="booklist-inner-div-first">
+                <img class="booklist-img" src="../assets/AmegegyszerEreje.jpg" alt="">
+            </div>
+            <div class="booklist-inner-div-second">
+                <h2><a class="booklist-second-heading" href="#">Ed Mylett</a></h2>
+                <h3 class="booklist-third-heading">A "Még egyszer" ereje</h3>
+                <div class="description">
+                    <p class="piece-description">Ha még egy gondolattal és tettel többre leszel képes, ráébredsz, hogyan lehet az életed a legjobb. - Közelebb vagy az álmaidhoz és a céljaidhoz, mint gondolnád.</p>
+                    <p class="piece-description">Az itt olvasható stratégiák révén - mindegy, milyen versenyen indulsz -, át fogsz haladni a célvonalon. - Az itt leírt elgondolás az élet minden területén használható.</p>
+                    
+                    <table class="booklist-table">
+                        <tr>
+                            <th>Kiadó</th>
+                            <td>21. Század Kiadó</td>
+                          </tr>
+                          <tr>
+                            <th>Kiadás éve</th>
+                            <td>2023</td>
+                          </tr>
+                          <tr>
+                            <th>Nyelv</th>
+                            <td>MAGYAR</td>
+                          </tr>
+                          <tr>
+                            <th>Beleolvasás</th>
+                            <td>epub mobi</td>
+                          </tr>
+                          <tr>
+                            <th>Formátum</th>
+                            <td>EPUB MOBI</td>
+                          </tr>
+                          <tr>
+                            <th>Árukód</th>
+                            <td>2773590 / 8151043</td>
+                          </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="booklist-inner-div-third">
+                <p class="booklist-inner-div-third-p">Online ár: <br> <span>4 390 Ft</span></p>
+                <button class="booklist-inner-div-third-btn" onclick="toStock()">Kosárba</button>
+            </div>
+        </div>
+        <hr class="horizontal-line">
+    </div>
+    <!-- **Books list** -->
+
+    <!-- Other -->
+    <div class="div-category">
+        <h2 class="category-head">További könyvek</h2>
+        <hr class="horizontal-line">
+    </div>
+    <div class="other-books">
+        <div class="book-list">
+            <div class="recommend_book swiper-slide">
+                <img src="../assets/BabelRFKuang.jpg" alt="Bábel">
+                <h4 class="recommend_book_title">Bábel</h4>
+                <p class="recommend_book_author">R. F. Kuang</p>
+                <hr class="recommend_book_hr">
+                <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                <h5 class="recommend_book_price">Ár: 6 290 Ft</h5>
+                <a href="babel.html" class="recommend_book_interested">Érdekel</a>
+            </div>
+            <div class="recommend_book swiper-slide">
+                <img src="../assets/HajnalCsillag.jpg" alt="Hajnalcsillag" title="Hajnalcsillag">
+                <h4 class="recommend_book_title">Hajnalcsillag</h4>
+                <p class="recommend_book_author">Karl Ove Knausgård</p>
+                <hr class="recommend_book_hr">
+                <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                <h5 class="recommend_book_price">Ár: 4 590 Ft</h5>
+                <a href="#" class="recommend_book_interested">Érdekel</a>
+            </div>
+            <div class="recommend_book swiper-slide">
+                <img src="../assets/book-senkihaza-sm.jpg" alt="Senkiháza" title="Senkiháza">
+                <h4 class="recommend_book_title">Senkiháza</h4>
+                <p class="recommend_book_author">Vida Gábor</p>
+                <hr class="recommend_book_hr">
+                <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                <h5 class="recommend_book_price">Ár: 5 339 Ft</h5>
+                <a href="#" class="recommend_book_interested">Érdekel</a>
+            </div>
+            <div class="recommend_book swiper-slide">
+                <img src="../assets/book-sokszornem-sm.jpg" alt="Sokszor nem halunk meg" title="Senkiháza">
+                <h4 class="recommend_book_title">Sokszor nem halunk meg</h4>
+                <p class="recommend_book_author">Tompa Andrea</p>
+                <hr class="recommend_book_hr">
+                <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+                <h5 class="recommend_book_price">Ár: 5 339 Ft</h5>
+                <a href="#" class="recommend_book_interested">Érdekel</a>
+            </div>
+        </div>
+    </div>
+<!-- **Other** -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img id="footer-img" src="../assets/logo.png" alt="logo">
+        <ul class="footer-list">
+            <li class="footer-liItem"><a title="Csordás János" href="https://github.com/JaniBT" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="footer-liItem"><a title="Vásári András" href="https://github.com/arris05" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="footer-liItem"><a title="Koós Balázs Bence" href="https://github.com/koosbalazsbence" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
+        </ul>
+        <hr id="footer-hr">
+        <ul class="footer-list_down">
+            <li class="footer-liItem"><span id="fullYear"></span> &copy; Paginae Fascinantes - Minden jog fenntartva</li>
+            <li class="footer-liItem">A 3okos tulajdona</li>
+        </ul>
+    </footer>
+    <!-- **Footer** -->
+    <script src="script/script.js"></script>
+</body>
+</html>
