@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/media_queries.css" />
+
+    <title>Paginae Fascinantes - Könyvek</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="title_div">
+        <h1><span>P</span>aginae Fascinantes</h1>
+      </div>
+      <nav class="middle-navbar">
+        <ul>
+          <li><a href="../home_page/index.html">Kezdőlap</a></li>
+          <li><a href="../books_page/books.html">Könyvek</a></li>
+          <li><a href="../stephen_king/stephen_king.html">Stephen King</a></li>
+          <li class="notShowing">
+            <button type="button" class="searchBtn">
+              <i class="fa fa-search"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="search_div">
+        <i
+          class="fa fa-search"
+          id="bigSearchBtn"
+          onclick="toggleSearchBar()"
+        ></i>
+      </div>
+
+      <div class="dropdown-menus">
+        <div class="hamburger-container" onclick="openDropdown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="dropdown-menu" class="menus">
+          <a href="index.html">Kezdőlap</a>
+          <a href="../books-page/books.html">Könyvek</a>
+          <a href="../stephen_king/stephen_king.html">Stephen King</a>
+          <a href="javascript:void(0)" onclick="toggleSearchBar()"
+            ><i class="fa fa-search"></i> Keresés</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="search-bar" id="searchBar">
+      <div class="flex-close">
+        <h3>Könyv keresése...</h3>
+        <span class="close-button" onclick="closeSearchBar()">&#10006;</span>
+      </div>
+      <div class="relative_div">
+        <input
+          type="text"
+          onkeyup="search()"
+          placeholder="Keresés..."
+          id="searchInput"
+        />
+        <div id="renderId"></div>
+      </div>
+    </div>
+    <!-- / Header -->
+
+    <!-- Breadcrumb  -->
+    <ul class="breadcrumb">
+      <li><a href="../home_page/index.html">Kezdőlap</a></li>
+      <li>Könyvek</li>
+    </ul>
+    <!-- / Breadcrumb  -->
+
+    <!-- Category -->
+    <div class="div-category">
+      <h2 class="category-head">Kategóriák</h2>
+      <hr class="horizontal-line" />
+      <ul class="category-list">
+        <li><a href="irodalom.html" class="category-list-link">Irodalom</a></li>
+        <li>
+          <a href="ismeretterjeszto.html" class="category-list-link"
+            >Ismeretterjesztő</a
+          >
+        </li>
+        <li>
+          <a href="eletmod_egeszseg.html" class="category-list-link"
+            >Életmód, egészség</a
+          >
+        </li>
+        <li>
+          <a href="tarsadalom_tudomany.html" class="category-list-link"
+            >Társ. tudományok</a
+          >
+        </li>
+        <li><a href="ezoteria.html" class="category-list-link">Ezotéria</a></li>
+      </ul>
+      <hr class="horizontal-line" />
+    </div>
+    <!-- / Category -->
+
+    <!-- Books -->
+    <div class="books">
+      <h2 class="boxhit-head">Sikerlista</h2>
+      <div class="book-list">
+        <div class="recommend_book swiper-slide">
+          <!-- <p class="place-position">1.</p> -->
+          <img
+            src="../assets/book-negyedik_szarny-sm.jpg"
+            alt="Negyedik szárny"
+            title="Negyedik szárny"
+          />
+          <h4 class="recommend_book_title">Negyedik szárny</h4>
+          <p class="recommend_book_author">Rebecca Yarros</p>
+          <hr class="recommend_book_hr" />
+          <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+          <h5 class="recommend_book_price">Ár: 8 390 Ft</h5>
+          <a
+            href="../books_page/negyedik_szarny.html"
+            class="recommend_book_interested"
+            >Érdekel</a
+          >
+        </div>
+        <div class="recommend_book swiper-slide">
+          <!-- <p class="place-position">2.</p> -->
+          <img
+            src="../assets/book-tedd_magad_hasznossa-sm.png"
+            alt="Tedd magad hasznossá"
+            title="Tedd magad hasznossá"
+          />
+          <h4 class="recommend_book_title">Tedd magad hasznossá</h4>
+          <p class="recommend_book_author">Arnold Schwarzenegger</p>
+          <hr class="recommend_book_hr" />
+          <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+          <h5 class="recommend_book_price">Ár: 5 339 Ft</h5>
+          <a
+            href="../books_page/tedd_magad_hasznossa.html"
+            class="recommend_book_interested"
+            >Érdekel</a
+          >
+        </div>
+        <div class="recommend_book swiper-slide">
+          <!-- <p class="place-position">3.</p> -->
+          <img
+            src="../assets/book-senkihaza-sm.jpg"
+            alt="Senkiháza"
+            title="Senkiháza"
+          />
+          <h4 class="recommend_book_title">Senkiháza</h4>
+          <p class="recommend_book_author">Vida Gábor</p>
+          <hr class="recommend_book_hr" />
+          <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+          <h5 class="recommend_book_price">Ár: 5 339 Ft</h5>
+          <a
+            href="../books_page/senkihaza.html"
+            class="recommend_book_interested"
+            >Érdekel</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- / Books -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <img id="footer-img" src="../assets/logo.png" alt="logo" />
+      <ul class="footer-list">
+        <li class="footer-liItem">
+          <a
+            title="Csordás János"
+            href="https://github.com/JaniBT"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li class="footer-liItem">
+          <a
+            title="Vásári András"
+            href="https://github.com/arris05"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li class="footer-liItem">
+          <a
+            title="Koós Balázs Bence"
+            href="https://github.com/koosbalazsbence"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <!-- <li><a href="https://github.com/koosbalazsbence" target="_blank"><img class="footer-img" src="../assets/github.png" alt="github-logo-link" title="@koosbalazsbence"></a></li> -->
+      </ul>
+      <hr id="footer-hr" />
+      <ul class="footer-list_down">
+        <li class="footer-liItem">
+          <span id="fullYear"></span> &copy; Paginae Fascinantes - Minden jog
+          fenntartva
+        </li>
+        <li class="footer-liItem">A 3okos tulajdona</li>
+      </ul>
+    </footer>
+    <!-- / Footer -->
+    <script src="script/script.js"></script>
+  </body>
+</html>

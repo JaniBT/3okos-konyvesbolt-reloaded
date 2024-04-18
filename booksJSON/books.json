@@ -3,7 +3,7 @@
         "name": "Bábel",
         "author": "R. F. Kuang",
         "release": 2023,
-        "hrefHome": "../books-page/babel.html",
+        "hrefHome": "../books_page/babel.html",
         "hrefBooks": "./babel.html"
     },
     {
@@ -15,56 +15,56 @@
         "name": "A fegyelem a sors",
         "author": "Ryan Holiday",
         "release": 2023,
-        "hrefHome": "../books-page/aFegyelemAsors.html",
+        "hrefHome": "../books_page/aFegyelemAsors.html",
         "hrefBooks": "./aFegyelemAsors.html"
     },
     {
         "name": "Tönkretett figyelem",
         "author": "Johann Hari",
         "release": 2023,
-        "hrefHome": "../books-page/tonkretettFigyelem.html",
+        "hrefHome": "../books_page/tonkretettFigyelem.html",
         "hrefBooks": "./tonkretettFigyelem.html"
     },
     {
         "name": "A szerelem 8 szabálya",
         "author": "Jay Shetty",
         "release": 2023,
-        "hrefHome": "../books-page/szerelem8szabaja.html",
+        "hrefHome": "../books_page/szerelem8szabaja.html",
         "hrefBooks": "./szerelem8szabaja.html"
     },
     {
         "name": "Belső fényünk",
         "author": "Michelle Obama",
         "release": 2023,
-        "hrefHome": "../books-page/belsoFenyunk.html",
+        "hrefHome": "../books_page/belsoFenyunk.html",
         "hrefBooks": "./belsoFenyunk.html"
     },
     {
         "name": "Miért nem mondta ezt nekem senki?",
         "author": "Dr. Julie Smith",
         "release": 2023,
-        "hrefHome": "../books-page/miertNemMondta.html",
+        "hrefHome": "../books_page/miertNemMondta.html",
         "hrefBooks": "./miertNemMondta.html"
     },
     {
         "name": "Tedd magad hasznossá",
         "author": "Arnold Schwarzenegger",
         "release": 2023,
-        "hrefHome": "../books-page/teddMagadHasznossa.html",
+        "hrefHome": "../books_page/teddMagadHasznossa.html",
         "hrefBooks": "./teddMagadHasznossa.html"
     },
     {
         "name": "Negyedik szárny",
         "author": "Rebecca Yarros",
         "release": 2024,
-        "hrefHome": "../books-page/negyedikSzarny.html",
+        "hrefHome": "../books_page/negyedikSzarny.html",
         "hrefBooks": "./negyedikSzarny.html"
     },
     {
         "name": "A kreatív folyamat",
         "author": "Rick Rubin",
         "release": 2023,
-        "hrefHome": "../books-page/aKreativFolyamat.html",
+        "hrefHome": "../books_page/aKreativFolyamat.html",
         "hrefBooks": "./aKreativFolyamat.html"
     },
     {
@@ -81,28 +81,28 @@
         "name": "Hajnalcsillag",
         "author": "Karl Ove Knausgård",
         "release": 2023,
-        "hrefHome": "../books-page/hajnalcsillag.html",
+        "hrefHome": "../books_page/hajnalcsillag.html",
         "hrefBooks": "./hajnalcsillag.html"
     },
     {
         "name": "Senkiháza",
         "author": "Vida Gábor",
         "release": 2023,
-        "hrefHome": "../books-page/senkihaza.html",
+        "hrefHome": "../books_page/senkihaza.html",
         "hrefBooks": "./senkihaza.html"
     },
     {
         "name": "Sokszor nem halunk meg",
         "author": "Tompa Andrea",
         "release": 2023,
-        "hrefHome": "../books-page/sokszorNemHalunkMeg.html",
+        "hrefHome": "../books_page/sokszorNemHalunkMeg.html",
         "hrefBooks": "./sokszorNemHalunkMeg.html"
     },
     {
         "name": "Az",
         "author": "Stephen King",
         "release": 1986,
-        "hrefHome": "../books-page/az.html",
+        "hrefHome": "../books_page/az.html",
         "hrefBooks": "./az.html"
     },
     {
@@ -114,28 +114,28 @@
         "name": "Help Wanted",
         "author": "Adelle Waldman",
         "release": 2024,
-        "hrefHome": "../books-page/helpWanted.html",
+        "hrefHome": "../books_page/helpWanted.html",
         "hrefBooks": "./helpWanted.html"
     },
     {
         "name": "Miután Elvesztettelek",
         "author": "Jojo Moyes",
         "release": 2015,
-        "hrefHome": "../books-page/miutanElvesztettelek.html",
+        "hrefHome": "../books_page/miutanElvesztettelek.html",
         "hrefBooks": "./miutanElvesztettelek.html"
     },
     {
         "name": "A ragyogás",
         "author": "Stephen King",
         "release": 1977,
-        "hrefHome": "../books-page/ragyogas.html",
+        "hrefHome": "../books_page/ragyogas.html",
         "hrefBooks": "./ragyogas.html"
     },
     {
         "name": "Baljós tavasz",
         "author": "Agatha Christie",
         "release": 2024,
-        "hrefHome": "../books-page/baljosTavasz.html",
+        "hrefHome": "../books_page/baljosTavasz.html",
         "hrefBooks": "./baljosTavasz.html"
     },
     {

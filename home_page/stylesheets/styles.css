@@ -622,7 +622,7 @@ body {
 .unmissable_img2 {
     width: 150px;
     height: 150px;
-    background: url(../../assets/AmierHalalJart.jpg) no-repeat;
+    background: url(../../assets/book-amiert_halal_jart-sm.jpg) no-repeat;
     border-radius: 50%;
 
     margin-inline: auto;
@@ -761,7 +761,7 @@ body {
 .KidBook {
     width: 90%;
     height: 350px;
-    background: url('../../assets/GyermekKönyv.gif');
+    background: url('../../assets/gif-gyerek_konyv.gif');
     background-size: cover;
     background-position: center;
     margin-inline: auto;
