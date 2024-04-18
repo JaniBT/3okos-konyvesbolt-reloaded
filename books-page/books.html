@@ -24,17 +24,19 @@
         </div>
         <nav class="middle-navbar">
             <ul>
-                <li><a href="../home_page/">Kezdőlap</a></li>
+                <li><a href="../home_page/index.html">Kezdőlap</a></li>
                 <li><a href="../books-page/books.html">Könyvek</a></li>
                 <li><a href="../stephen_king/stephen_king.html">Stephen King</a></li>
                 <li class="notShowing">
                     <button type="button" class="searchBtn"><i class="fa fa-search"></i></button>
                 </li>
-            </ul>          
+            </ul>
+            
         </nav>
         <div class="search_div">
-            <i class="fa fa-search"></i>
+            <i class="fa fa-search" id="bigSearchBtn" onclick="toggleSearchBar()"></i>
         </div>
+
         <div class="dropdown-menus">
             <div class="hamburger-container" onclick="openDropdown(this)">
                 <div class="bar1"></div>
@@ -42,13 +44,26 @@
                 <div class="bar3"></div>
             </div>
             <div id="dropdown-menu" class="menus">
-                <a href="../home_page/index.html">Kezdőlap</a>
+                <a href="index.html">Kezdőlap</a>
                 <a href="../books-page/books.html">Könyvek</a>
                 <a href="../stephen_king/stephen_king.html">Stephen King</a>
-                <a href="javascript:void(0)" onclick="openSearchBar()"><i class="fa fa-search"></i> Keresés</a>
+                <a href="javascript:void(0)" onclick="toggleSearchBar()"><i class="fa fa-search"></i> Keresés</a>
             </div>
         </div>
     </header>
+
+    <div class="search-bar" id="searchBar">
+        <div class="flex-close">
+            <h3>Könyv keresése...</h3>
+            <span class="close-button" onclick="closeSearchBar()">&#10006;</span>
+        </div>
+        <div class="relative_div">
+            <input type="text" onkeyup="search()" placeholder="Keresés..." id="searchInput">
+            <div id="renderId">
+
+            </div>
+        </div>
+    </div>
     <!-- / Header -->
 
     <!-- Breadcrumb  -->

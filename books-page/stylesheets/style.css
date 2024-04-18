@@ -49,6 +49,8 @@ body{
     margin: 0;
     padding: 0;
 }
+/* Navbar */
+
 .main-header {
     width: 100%;
     height: 100px;
@@ -57,17 +59,21 @@ body{
     align-items: center;
     padding: 1rem 2rem;
 }
+
 .title_div h1 {
     font-family: var(--ff-josefin);
     font-size: 1.5rem;
 }
+
 .title_div span {
     color: var(--primary);
     font-size: 1.5rem;
 }
+
 .middle-navbar {
     width: fit-content;
 }
+
 .middle-navbar ul {
     list-style: none;
     padding: 0;
@@ -76,49 +82,62 @@ body{
     align-items: center;
     gap: 2rem;
 }
+
 .middle-navbar ul li a {
     font-size: 1rem;
     text-decoration: none;
     color: var(--text);
-    font-family: var(--ff-poppins);
+
     transition: var(--textTransition);
 }
+
 .middle-navbar ul li a:hover {
     color: var(--secondary);
 }
+
 .search_div {
     width: 209px;
 }
+
 .search_div i {
     cursor: pointer;
     margin-left: calc(209px - 1.5rem);
     font-size: 1.5rem;
+
     transition: var(--textTransition);
 }
+
 .search_div i:hover {
     color: var(--secondary);
 }
+
 .notShowing {
     display: none;
 }
+
 .searchBtn {
     padding: 0.3rem;
     border: none;
     background-color: var(--background);
     cursor: pointer;
 }
+
 .searchBtn i {
     font-size: 1rem;
+
     transition: var(--textTransition);
 }
+
 .searchBtn i:hover {
     color: var(--secondary);
 }
+
 .hamburger-container {
     display: inline-block;
     cursor: pointer;
     user-select: none;
     -ms-user-select: none;
+
     .bar1, .bar2, .bar3 {
         width: 35px;
         height: 5px;
@@ -128,40 +147,154 @@ body{
         border-radius: 0.6rem;
     }
 }
+
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
+
 .change .bar2 { opacity: 0; }
+
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
 .dropdown-menus {
     display: none;
     position: relative;
 }
+
 .menus {
     position: absolute;
     display: none;
     right: 0;
+
     background-color: var(--background);
     min-width: 10rem;
     box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 0.2);
     z-index: 99;
 }
+
 .menus a {
     color: var(--text);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+
     transition: all 0.4s ease;
 }
+
 .menus a:hover {
     background-color: var(--bg-hover-gray);
     color: var(--background);
 }
+
 .show {
     display: block;
 }
+
+/* Search Bar */
+
+.search-bar {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    width: 25%;
+    padding: 20px;
+    background-color: var(--background);
+    box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    z-index: 999;
+
+    transition: transform 0.5s ease;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    position: relative;
+}
+
+.search-bar input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 18px;
+
+    z-index: 1000;
+}
+
+.flex-close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.flex-close h3 {
+    font-family: var(--ff-josefin);
+}
+
+.allBooks {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 500px);
+    overflow-y: scroll;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background);
+
+    list-style: none;
+}
+
+.allBooks li {
+    padding: .8rem;
+    margin: 6px;
+
+    border: 1px solid var(--greenish);
+    border-left: 4px solid var(--greenish);
+    border-radius: .5rem;
+
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.allBooks li:hover {
+    background-color: var(--greenishBackground);
+}
+
+.allBooks a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.book_listItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book_listItems div h4 {
+    font-size: 1.1rem;
+}
+
+.book_listItems:nth-child(1) p {
+    font-size: .8rem;
+}
+
+/* Navbar end */
 
 /* Breadcrumb */
 .breadcrumb{
