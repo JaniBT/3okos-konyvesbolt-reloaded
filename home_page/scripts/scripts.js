@@ -113,14 +113,21 @@ discountDivs[0].classList.add('active')
 previewImage.src = '../assets/book-gyilkossag.png'
 
 // Search bar funkcionalitás innen indul:
+/* 
+
+    INNEN:
+
+*/
+
+const resultDiv = document.querySelector('#renderId')
 
 function toggleSearchBar() {
     const searchBar = document.getElementById("searchBar")
     searchBar.style.transform = "translate(-50%, -3%)"
-    // searchBar.style.transform = "translate(-50%, -300%)"
 }
 
 function closeSearchBar() {
+    resultDiv.innerHTML = ""
     const searchBar = document.getElementById("searchBar")
     searchBar.style.transform = "translate(-50%, -300%)"
 }
@@ -128,12 +135,14 @@ function closeSearchBar() {
 const searchInput = document.querySelector('#searchInput')
 
 async function renderBooks(data) {
+    // Home_Page: bookDatas.hrefHome
+    // Books_Page: bookDatas.hrefBooks
     let state = ``
     for (const bookDatas of data) {
         state += 
         `
             <li>
-                <a href="#">
+                <a href="${bookDatas.hrefHome}">
                     <div class="book_listItems">
                         <div>
                             <h4>${bookDatas.name}</h4>
@@ -169,11 +178,28 @@ searchInput.addEventListener('focus', async () => {
 
     let state = `<ul class="allBooks">${await renderBooks(storedBooks)}</ul>`
 
-    const resultDiv = document.querySelector('#renderId')
     resultDiv.innerHTML += state
-
-    searchInput.addEventListener('blur', () => {
-        resultDiv.innerHTML = ""
+    document.addEventListener('click', (event) => {
+        if (!document.querySelector('#searchBar').contains(event.target)) {
+            resultDiv.innerHTML = ""
+        }
     })
 })
 
+function search() {
+    let input, filter, ul, li, h4, i, txtValue
+    input = document.getElementById('searchInput')
+    filter = input.value.toUpperCase()
+    ul = document.querySelector(".allBooks")
+    li = ul.getElementsByTagName('li')
+    
+    for (i = 0; i < li.length; i++) {
+        h4 = li[i].getElementsByTagName("h4")[0]
+        txtValue = h4.textContent || h4.innerText
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = ""
+        } else {
+            li[i].style.display = "none"
+        }
+    }
+}
