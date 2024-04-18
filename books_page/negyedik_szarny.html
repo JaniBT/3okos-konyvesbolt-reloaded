@@ -1,203 +1,348 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/media_queries.css">
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/media_queries.css" />
 
-    <title>Paginae Fascinantes - Tedd magad hasznossá - Arnold Schwarzenegger</title>
-</head>
-<body>
+    <title>
+      Paginae Fascinantes - Tedd magad hasznossá - Arnold Schwarzenegger
+    </title>
+  </head>
+  <body>
     <!-- Header -->
     <header class="main-header">
-        <div class="title_div">
-            <h1><span>P</span>aginae Fascinantes</h1>
+      <div class="title_div">
+        <h1><span>P</span>aginae Fascinantes</h1>
+      </div>
+      <nav class="middle-navbar">
+        <ul>
+          <li><a href="../home_page/index.html">Kezdőlap</a></li>
+          <li><a href="../books_page/books.html">Könyvek</a></li>
+          <li><a href="../stephen_king/stephen_king.html">Stephen King</a></li>
+          <li class="notShowing">
+            <button type="button" class="searchBtn">
+              <i class="fa fa-search"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="search_div">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="dropdown-menus">
+        <div class="hamburger-container" onclick="openDropdown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
-        <nav class="middle-navbar">
-            <ul>
-                <li><a href="../home_page/index.html">Kezdőlap</a></li>
-                <li><a href="../books-page/books.html">Könyvek</a></li>
-                <li><a href="../stephen_king/stephen_king.html">Stephen King</a></li>
-                <li class="notShowing">
-                    <button type="button" class="searchBtn"><i class="fa fa-search"></i></button>
-                </li>
-            </ul>
-        </nav>
-        <div class="search_div">
-            <i class="fa fa-search"></i>
+        <div id="dropdown-menu" class="menus">
+          <a href="../home_page/index.html">Kezdőlap</a>
+          <a href="../books_page/books.html">Könyvek</a>
+          <a href="../stephen_king/stephen_king.html">Stephen King</a>
+          <a href="javascript:void(0)" onclick="openSearchBar()"
+            ><i class="fa fa-search"></i> Keresés</a
+          >
         </div>
-        <div class="dropdown-menus">
-            <div class="hamburger-container" onclick="openDropdown(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-            <div id="dropdown-menu" class="menus">
-                <a href="../home_page/index.html">Kezdőlap</a>
-                <a href="../books-page/books.html">Könyvek</a>
-                <a href="../stephen_king/stephen_king.html">Stephen King</a>
-                <a href="javascript:void(0)" onclick="openSearchBar()"><i class="fa fa-search"></i> Keresés</a>
-            </div>
-        </div>
+      </div>
     </header>
     <!-- **Header** -->
 
     <!-- Breadcrumb  -->
     <ul class="breadcrumb">
-        <li><a href="../home_page/index.html">Kezdőlap</a></li>
-        <li><a href="../books-page/books.html">Könyvek</a></li>
-        <li><a href="../books-page/irodalom.html">Irodalom</a></li>
-        <li>Negyedik Szárny - Rebecca Yarros</li>
+      <li><a href="../home_page/index.html">Kezdőlap</a></li>
+      <li><a href="../books_page/books.html">Könyvek</a></li>
+      <li><a href="../books_page/irodalom.html">Irodalom</a></li>
+      <li>Negyedik Szárny - Rebecca Yarros</li>
     </ul>
     <!-- **Breadcrumb**  -->
 
     <!-- Books list -->
     <div class="div-booklist">
-        <hr class="horizontal-line">
-        <div class="booklist-div">
-            <div class="booklist-inner-div-first">
-                <img class="booklist-img" src="../assets/book-negyedikszarny-sm.jpg" alt="">
-            </div>
-            <div class="booklist-inner-div-second">
-                <h2><a class="booklist-second-heading" href="#">Rebecca Yarros</a></h2>
-                <h3 class="booklist-third-heading">Fouth Wing - Negyedik Szárny</h3>
-                <p class="available-ebook">Ez a könyv elérhető e-könyv formában is.</p>
-                <p class="recommend_book_type"><a class="regular-link" href=""><i class="fa fa-book"></i> E-Könyv</a></p>
-                <div class="description">
-                    <p class="piece-description">Lépj a sárkánylovasok képzésére szolgáló katonai iskola falai közé, és ismerd meg ezt az elit és brutális világot a bestseller szerző Rebecca Yarros regényéből!</p>
-                    <p class="full-description">A húszéves Violet Sorrengail egész eddigi életében azt hitte, a történelem tanulmányozása lesz a feladata az Írnok Kvadránsban az imádott könyvek között.</p>
-                    <p class="full-description">Azonban az iskola vezénylő tábornoka - aki egyszemélyben a lány kőkemény anyja - megparancsolja, hogy Violetnek be kell lépnie a többszáz jelölt közé, akik Navarre elitjéhez,
-                    a sárkánylovasokhoz akarnak tartozni. Ha mindenkinél kisebb és törékenyebb vagy, akkor csak egy hajszál választ el a haláltól... mondjuk azért, mert a sárkányok nem választanak ki ,,törékeny" embereket, hanem felperzselik őket.</p>
-                    <p class="full-description">Ráadásul, amikor kevesebb a kapcsolódni hajlandó sárkány, mint kadét, nem meglepő, hogy a többség szívesen végezne Violettel, hogy ezzel is növelje a saját esélyeit a sikerre. A többiek pedig azért ölnék meg, mert az anyja lánya; köztük van Xaden Riorson is, a Lovasok
-                    Kvadránsának leghatalmasabb és legkönyörtelenebb szárnyvezére is.</p>
-                    <p class="full-description">Violetnek minden ravaszságára szüksége lesz, hogy minden újabb napfelkelte életben találja. Közben az iskola falain túl dúló háború egyre gyilkosabb, a királyság védelmét szolgáló erődítmények sorban elesnek, és egyre többen halnak meg. A helyzeten tovább ront, hogy Violet gyanakodni kezd, hogy a vezetés rettenetes titkot rejteget.</p>
-                    <p class="full-description">Barátok, ellenségek, szeretők. A Basgiath Hadi Iskolában mindenkinek határozott tervei vannak, mert ha valaki egyszer bekerül, onnan csak két kiút van: lediplomázni vagy meghalni.</p>
-                    <p class="full-description">"A Fourth Wing első lapjától az utolsóig megdobogtatja majd a szíved...Ez egy olyan fantasy, amilyet még biztosan nem olvastál!" - Jennifer L. Armentrout, #1 New York Times bestseller szerző</p>
-                    <p class="full-description">"A legbrutálisabb, legaddiktívabb fantasy, amit az elmúlt évtizedben olvastam" - Tracy Wolff, #1 New York Times bestseller szerző</p>
-                    <p class="full-description">"Brutális, pörgős, letehetetlen és romantikus feszültségtől vibráló... mindent, és még annál is többet nyújt, amit egy könyvtől elvárok. Fenomenális!" - Samantha Young, nemzetközi bestseller szerző</p>
-                    <p class="full-description">"Sárkányok és háború, szenvedély és hatalom...egyszerűen lehengerlő!" - Nalini Singh, nemzetközi bestseller szerző</p>
-
-                    <button class="toggle-btn" onclick="toggleText()">Szöveg megjelenítése/elrejtése</button>
-
-                    
-                    <table class="booklist-table">
-                        <tr>
-                            <th>Kiadó</th>
-                            <td>Rainy Days</td>
-                          </tr>
-                          <tr>
-                            <th>Kiadás éve</th>
-                            <td>2023</td>
-                          </tr>
-                          <tr>
-                            <th>Nyelv</th>
-                            <td>MAGYAR</td>
-                          </tr>
-                          <tr>
-                            <th>Oldalak száma</th>
-                            <td>796</td>
-                          </tr>
-                          <tr>
-                            <th>Borító</th>
-                            <td>KARTONKÖTÉS</td>
-                          </tr>
-                          <tr>
-                            <th>Súly</th>
-                            <td>622 gr</td>
-                          </tr>
-                          <tr>
-                            <th>Fordító</th>
-                            <td>Bartók Imre</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="booklist-inner-div-third">
-                <p class="booklist-inner-div-third-span"><span>Eredeti ár:</span> <br> <span>6 990 Ft</span></p>
-                <p class="booklist-inner-div-third-p">Online ár: <br> <span>6 640 Ft</span></p>
-                <button class="booklist-inner-div-third-btn" onclick="toStock()">Kosárba</button>
-                <div class="div-delivery">
-                    <p><i class="fa fa-home"></i> Személyes átvétel 1-3 munkanap</p>
-                    <hr class="horizontal-line">
-                    <p><i class="fa fa-car"></i> Házhoz szállítás 1-3 munkanap</p>
-                </div>
-            </div>
+      <hr class="horizontal-line" />
+      <div class="booklist-div">
+        <div class="booklist-inner-div-first">
+          <img
+            class="booklist-img"
+            src="../assets/book-negyedik_szarny-sm.jpg"
+            alt=""
+          />
         </div>
-        <hr class="horizontal-line">
+        <div class="booklist-inner-div-second">
+          <h2>
+            <a class="booklist-second-heading" href="#">Rebecca Yarros</a>
+          </h2>
+          <h3 class="booklist-third-heading">Fouth Wing - Negyedik Szárny</h3>
+          <p class="available-ebook">
+            Ez a könyv elérhető e-könyv formában is.
+          </p>
+          <p class="recommend_book_type">
+            <a class="regular-link" href=""
+              ><i class="fa fa-book"></i> E-Könyv</a
+            >
+          </p>
+          <div class="description">
+            <p class="piece-description">
+              Lépj a sárkánylovasok képzésére szolgáló katonai iskola falai
+              közé, és ismerd meg ezt az elit és brutális világot a bestseller
+              szerző Rebecca Yarros regényéből!
+            </p>
+            <p class="full-description">
+              A húszéves Violet Sorrengail egész eddigi életében azt hitte, a
+              történelem tanulmányozása lesz a feladata az Írnok Kvadránsban az
+              imádott könyvek között.
+            </p>
+            <p class="full-description">
+              Azonban az iskola vezénylő tábornoka - aki egyszemélyben a lány
+              kőkemény anyja - megparancsolja, hogy Violetnek be kell lépnie a
+              többszáz jelölt közé, akik Navarre elitjéhez, a sárkánylovasokhoz
+              akarnak tartozni. Ha mindenkinél kisebb és törékenyebb vagy, akkor
+              csak egy hajszál választ el a haláltól... mondjuk azért, mert a
+              sárkányok nem választanak ki ,,törékeny" embereket, hanem
+              felperzselik őket.
+            </p>
+            <p class="full-description">
+              Ráadásul, amikor kevesebb a kapcsolódni hajlandó sárkány, mint
+              kadét, nem meglepő, hogy a többség szívesen végezne Violettel,
+              hogy ezzel is növelje a saját esélyeit a sikerre. A többiek pedig
+              azért ölnék meg, mert az anyja lánya; köztük van Xaden Riorson is,
+              a Lovasok Kvadránsának leghatalmasabb és legkönyörtelenebb
+              szárnyvezére is.
+            </p>
+            <p class="full-description">
+              Violetnek minden ravaszságára szüksége lesz, hogy minden újabb
+              napfelkelte életben találja. Közben az iskola falain túl dúló
+              háború egyre gyilkosabb, a királyság védelmét szolgáló
+              erődítmények sorban elesnek, és egyre többen halnak meg. A
+              helyzeten tovább ront, hogy Violet gyanakodni kezd, hogy a vezetés
+              rettenetes titkot rejteget.
+            </p>
+            <p class="full-description">
+              Barátok, ellenségek, szeretők. A Basgiath Hadi Iskolában
+              mindenkinek határozott tervei vannak, mert ha valaki egyszer
+              bekerül, onnan csak két kiút van: lediplomázni vagy meghalni.
+            </p>
+            <p class="full-description">
+              "A Fourth Wing első lapjától az utolsóig megdobogtatja majd a
+              szíved...Ez egy olyan fantasy, amilyet még biztosan nem olvastál!"
+              - Jennifer L. Armentrout, #1 New York Times bestseller szerző
+            </p>
+            <p class="full-description">
+              "A legbrutálisabb, legaddiktívabb fantasy, amit az elmúlt
+              évtizedben olvastam" - Tracy Wolff, #1 New York Times bestseller
+              szerző
+            </p>
+            <p class="full-description">
+              "Brutális, pörgős, letehetetlen és romantikus feszültségtől
+              vibráló... mindent, és még annál is többet nyújt, amit egy
+              könyvtől elvárok. Fenomenális!" - Samantha Young, nemzetközi
+              bestseller szerző
+            </p>
+            <p class="full-description">
+              "Sárkányok és háború, szenvedély és hatalom...egyszerűen
+              lehengerlő!" - Nalini Singh, nemzetközi bestseller szerző
+            </p>
+
+            <button class="toggle-btn" onclick="toggleText()">
+              Szöveg megjelenítése/elrejtése
+            </button>
+
+            <table class="booklist-table">
+              <tr>
+                <th>Kiadó</th>
+                <td>Rainy Days</td>
+              </tr>
+              <tr>
+                <th>Kiadás éve</th>
+                <td>2023</td>
+              </tr>
+              <tr>
+                <th>Nyelv</th>
+                <td>MAGYAR</td>
+              </tr>
+              <tr>
+                <th>Oldalak száma</th>
+                <td>796</td>
+              </tr>
+              <tr>
+                <th>Borító</th>
+                <td>KARTONKÖTÉS</td>
+              </tr>
+              <tr>
+                <th>Súly</th>
+                <td>622 gr</td>
+              </tr>
+              <tr>
+                <th>Fordító</th>
+                <td>Bartók Imre</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="booklist-inner-div-third">
+          <p class="booklist-inner-div-third-span">
+            <span>Eredeti ár:</span> <br />
+            <span>6 990 Ft</span>
+          </p>
+          <p class="booklist-inner-div-third-p">
+            Online ár: <br />
+            <span>6 640 Ft</span>
+          </p>
+          <button class="booklist-inner-div-third-btn" onclick="toStock()">
+            Kosárba
+          </button>
+          <div class="div-delivery">
+            <p><i class="fa fa-home"></i> Személyes átvétel 1-3 munkanap</p>
+            <span class="span-delivery"
+              >Átvételi cím: <br />
+              <span class="span-delivery-hovered"
+                >5521 Szeghalom, Nagy Miklós u. 2</span
+              ></span
+            >
+            <hr class="horizontal-line" />
+            <p><i class="fa fa-car"></i> Házhoz szállítás 1-3 munkanap</p>
+            <a href="#" class="regular-link" onclick="toStock()"
+              >Átvételi lehetőségek: Packeta, Foxpost</a
+            >
+          </div>
+        </div>
+      </div>
+      <hr class="horizontal-line" />
     </div>
     <!-- **Books list** -->
 
     <!-- Other -->
     <div class="div-category">
-        <h2 class="category-head">További könyvek</h2>
-        <hr class="horizontal-line">
+      <h2 class="category-head">További könyvek</h2>
+      <hr class="horizontal-line" />
     </div>
     <div class="other-books">
-        <div class="book-list">
-            <div class="recommend_book swiper-slide">
-                <img src="../assets/BabelRFKuang.jpg" alt="Bábel">
-                <h4 class="recommend_book_title">Bábel</h4>
-                <p class="recommend_book_author">R. F. Kuang</p>
-                <hr class="recommend_book_hr">
-                <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                <h5 class="recommend_book_price">Ár: 6 290 Ft</h5>
-                <a href="babel.html" class="recommend_book_interested">Érdekel</a>
-            </div>
-            <div class="recommend_book swiper-slide">
-                <img src="../assets/HajnalCsillag.jpg" alt="Hajnalcsillag" title="Hajnalcsillag">
-                <h4 class="recommend_book_title">Hajnalcsillag</h4>
-                <p class="recommend_book_author">Karl Ove Knausgård</p>
-                <hr class="recommend_book_hr">
-                <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                <h5 class="recommend_book_price">Ár: 4 590 Ft</h5>
-                <a href="#" class="recommend_book_interested">Érdekel</a>
-            </div>
-            <div class="recommend_book swiper-slide">
-                <img src="../assets/book-senkihaza-sm.jpg" alt="Senkiháza" title="Senkiháza">
-                <h4 class="recommend_book_title">Senkiháza</h4>
-                <p class="recommend_book_author">Vida Gábor</p>
-                <hr class="recommend_book_hr">
-                <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                <h5 class="recommend_book_price">Ár: 5 339 Ft</h5>
-                <a href="#" class="recommend_book_interested">Érdekel</a>
-            </div>
-            <div class="recommend_book swiper-slide">
-                <img src="../assets/book-sokszornem-sm.jpg" alt="Sokszor nem halunk meg" title="Senkiháza">
-                <h4 class="recommend_book_title">Sokszor nem halunk meg</h4>
-                <p class="recommend_book_author">Tompa Andrea</p>
-                <hr class="recommend_book_hr">
-                <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
-                <h5 class="recommend_book_price">Ár: 5 339 Ft</h5>
-                <a href="#" class="recommend_book_interested">Érdekel</a>
-            </div>
+      <div class="book-list">
+        <div class="recommend_book swiper-slide">
+          <img src="../assets/book-babel-sm.jpg" alt="Bábel" />
+          <h4 class="recommend_book_title">Bábel</h4>
+          <p class="recommend_book_author">R. F. Kuang</p>
+          <hr class="recommend_book_hr" />
+          <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+          <h5 class="recommend_book_price">Ár: 6 290 Ft</h5>
+          <a href="babel.html" class="recommend_book_interested">Érdekel</a>
         </div>
+        <div class="recommend_book swiper-slide">
+          <img
+            src="../assets/book-hajnal_csillag-sm.jpg"
+            alt="Hajnalcsillag"
+            title="Hajnalcsillag"
+          />
+          <h4 class="recommend_book_title">Hajnalcsillag</h4>
+          <p class="recommend_book_author">Karl Ove Knausgård</p>
+          <hr class="recommend_book_hr" />
+          <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+          <h5 class="recommend_book_price">Ár: 4 590 Ft</h5>
+          <a href="../books_page/hajnal_csillag.html" class="recommend_book_interested">Érdekel</a>
+        </div>
+        <div class="recommend_book swiper-slide">
+          <img
+            src="../assets/book-senkihaza-sm.jpg"
+            alt="Senkiháza"
+            title="Senkiháza"
+          />
+          <h4 class="recommend_book_title">Senkiháza</h4>
+          <p class="recommend_book_author">Vida Gábor</p>
+          <hr class="recommend_book_hr" />
+          <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+          <h5 class="recommend_book_price">Ár: 5 339 Ft</h5>
+          <a href="../books_page/senkihaza.html" class="recommend_book_interested">Érdekel</a>
+        </div>
+        <div class="recommend_book swiper-slide">
+          <img
+            src="../assets/book-sokszornem-sm.jpg"
+            alt="Sokszor nem halunk meg"
+            title="Senkiháza"
+          />
+          <h4 class="recommend_book_title">Sokszor nem halunk meg</h4>
+          <p class="recommend_book_author">Tompa Andrea</p>
+          <hr class="recommend_book_hr" />
+          <p class="recommend_book_type"><i class="fa fa-book"></i> Könyv</p>
+          <h5 class="recommend_book_price">Ár: 5 339 Ft</h5>
+          <a href="../books_page/sokszor_nem_halunk_meg.html" class="recommend_book_interested">Érdekel</a>
+        </div>
+      </div>
     </div>
-<!-- **Other** -->
+    <!-- **Other** -->
 
     <!-- Footer -->
     <footer class="footer">
-        <img id="footer-img" src="../assets/logo.png" alt="logo">
-        <ul class="footer-list">
-            <li class="footer-liItem"><a title="Csordás János" href="https://github.com/JaniBT" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li class="footer-liItem"><a title="Vásári András" href="https://github.com/arris05" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li class="footer-liItem"><a title="Koós Balázs Bence" href="https://github.com/koosbalazsbence" class="footer-link" target="_blank"><i class="fa fa-github"></i></a></li>
-        </ul>
-        <hr id="footer-hr">
-        <ul class="footer-list_down">
-            <li class="footer-liItem"><span id="fullYear"></span> &copy; Paginae Fascinantes - Minden jog fenntartva</li>
-            <li class="footer-liItem">A 3okos tulajdona</li>
-        </ul>
+      <img id="footer-img" src="../assets/logo.png" alt="logo" />
+      <ul class="footer-list">
+        <li class="footer-liItem">
+          <a
+            title="Csordás János"
+            href="https://github.com/JaniBT"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li class="footer-liItem">
+          <a
+            title="Vásári András"
+            href="https://github.com/arris05"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li class="footer-liItem">
+          <a
+            title="Koós Balázs Bence"
+            href="https://github.com/koosbalazsbence"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+      </ul>
+      <hr id="footer-hr" />
+      <ul class="footer-list_down">
+        <li class="footer-liItem">
+          <span id="fullYear"></span> &copy; Paginae Fascinantes - Minden jog
+          fenntartva
+        </li>
+        <li class="footer-liItem">A 3okos tulajdona</li>
+      </ul>
     </footer>
     <!-- **Footer** -->
     <script src="script/script.js"></script>
-</body>
+  </body>
 </html>
