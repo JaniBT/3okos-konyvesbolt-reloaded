@@ -463,6 +463,9 @@ ul.breadcrumb li a:hover {
     text-align: center;
     color: #A9A9A9
 }
+.span-delivery-hovered:hover{
+    color: var(--greenish);
+}
 /* / Books */
 
 /* Babel and others div */
@@ -560,6 +563,7 @@ ul.breadcrumb li a:hover {
     margin-block: 3rem;
     font-size: .85rem;
 }
+
 /* / Babel and others div */
 
 /* Footer */
