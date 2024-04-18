@@ -8,7 +8,7 @@
     --bg-black-transparent-30: rgb(0 0 0 / 0.3);
     --bg-black-transparent-45: rgb(0 0 0 / 0.45);
     --border-color-gray: rgb(107 114 128 / 1);
-    --bg-hover-gray: rgb(31 41 55 / 1);
+    --bg-hover-gray: rgb(31 41 55 /1);
     --clr-zinc-500-45: rgb(113 113 122 / 0.45);
 }
 
