@@ -1,8 +1,8 @@
-# Paginae Fascinantes Webáruház Dokumentáció
+# Paginae Fascinantes Webáruház
 
 Üdvözöllek a **Paginae Fascinantes** webáruház dokumentációjában! Ez a webáruház kifejezetten az olvasás szerelmeseinek készült, akik szeretik felfedezni a különféle témájú könyveket.
 
-Link a weboldalhoz: [Paginae Fascinantes](https://link-url-here.org](https://janibt.github.io/3okos-konyvesbolt-reloaded](https://janibt.github.io/3okos-konyvesbolt-reloaded/)))
+Link a weboldalhoz: [Paginae Fascinantes](https://janibt.github.io/3okos-konyvesbolt-reloaded/)
 
 ## 📚 Kategóriák Kiválasztása
 
