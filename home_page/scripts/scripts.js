@@ -161,7 +161,7 @@ async function renderBooks(data) {
 }
 
 async function fetchData() {
-    const response = await fetch('../booksJSON/books.json')
+    const response = await fetch('../../booksJSON/books.json')
     const data = await response.json()
 
     return data
