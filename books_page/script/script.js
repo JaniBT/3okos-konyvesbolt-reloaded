@@ -76,7 +76,7 @@ async function renderBooks(data) {
 }
 
 async function fetchData() {
-    const response = await fetch('../../booksJSON/books.json')
+    const response = await fetch('https://janibt.github.io/3okos-konyvesbolt-reloaded/booksJSON/books.json')
     const data = await response.json()
 
     return data
