@@ -1,4 +1,10 @@
 
+@media screen and (max-width: 1400px) {
+    .search-bar {
+        width: 35%; 
+    }
+}
+
 @media screen and (max-width: 1150px) {
     .search_div {
         display: none;
@@ -14,6 +20,59 @@
     }
     .booklist-img{
         position: relative;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .discount_main_section {
+        gap: 2rem;
+    }
+
+    .search-bar {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .search_div {
+        display: none;
+    }
+
+    .notShowing {
+        display: block;
+    }
+
+    .section_unmissable_images {
+        width: 95%;
+    }
+
+    .discount_main_section {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+    }
+
+    .discount_images {
+        width: 80%;
+    }
+
+    .discount_texts {
+        width: 70%;
+    }
+
+    .KidBook {
+        width: 100%;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section_unmissable_images {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        width: 50%;
     }
 }
 
@@ -41,15 +100,58 @@
         width: 200px;
     }
 }
+@media screen and (max-width: 700px) {
+    .search-bar {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .main_recommend_book {
+        width: 220px;
+    }
+
+    .search-bar {
+        width: 75%;
+    }
+}
 
 @media screen and (max-width: 440px) {
-    .carousel {
-        height: 150px;
+
+    .circles i {
+        font-size: 0.5rem;
     }
-    .booklist-div{
-        padding: .35rem;
+
+    .circles i[data-active] {
+        font-size: 0.75rem;
     }
-    .booklist-img{
-        width: 150px;
+
+    .main_recommend_book {
+        width: 180px;
+    }
+
+    .small_recommend_books {
+        width: 100%;
+    }
+
+    .recommend_book {
+        width: 100%;
+    }
+
+    .recommend_books {
+        gap: 1rem;
+    }
+
+    .discount_images {
+        width: 100%;
+        height: 180px;
+    }
+
+    .discount_texts {
+        width: 90%;
+    }
+
+    .search-bar {
+        width: 85%;
     }
 }

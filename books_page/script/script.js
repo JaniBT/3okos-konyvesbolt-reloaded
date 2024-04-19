@@ -34,27 +34,28 @@ function toggleText() {
 }
 
 //
-const resultDiv = document.querySelector("#renderId")
+const resultDiv = document.querySelector('#renderId')
 
 function toggleSearchBar() {
-  const searchBar = document.getElementById("searchBar")
-  searchBar.style.transform = "translate(-50%, -3%)"
+    const searchBar = document.getElementById("searchBar")
+    searchBar.style.transform = "translate(-50%, -3%)"
 }
 
 function closeSearchBar() {
-  resultDiv.innerHTML = ""
-  const searchBar = document.getElementById("searchBar")
-  searchBar.style.transform = "translate(-50%, -300%)"
+    resultDiv.innerHTML = ""
+    const searchBar = document.getElementById("searchBar")
+    searchBar.style.transform = "translate(-50%, -300%)"
 }
 
-const searchInput = document.querySelector("#searchInput")
+const searchInput = document.querySelector('#searchInput')
 
 async function renderBooks(data) {
-  // Home_Page: bookDatas.hrefHome
-  // Books_Page: bookDatas.hrefBooks
-  let state = ``
-  for (const bookDatas of data) {
-    state += `
+    // Home_Page: bookDatas.hrefHome
+    // Books_Page: bookDatas.hrefBooks
+    let state = ``
+    for (const bookDatas of data) {
+        state += 
+        `
             <li>
                 <a href="${bookDatas.hrefHome}">
                     <div class="book_listItems">
@@ -69,51 +70,51 @@ async function renderBooks(data) {
                 </a>
             </li>
         `
-  }
+    }
 
-  return state
+    return state
 }
 
 async function fetchData() {
-  const response = await fetch("../../booksJSON/books.json")
-  const data = await response.json()
+    const response = await fetch('../../booksJSON/books.json')
+    const data = await response.json()
 
-  return data
+    return data
 }
 
 let storedBooks = undefined
 
 window.onload = async () => {
-  const result = await fetchData()
-  storedBooks = result
+    const result = await fetchData()
+    storedBooks = result
 }
 
-searchInput.addEventListener("focus", async () => {
-  let state = `<ul class="allBooks">${await renderBooks(storedBooks)}</ul>`
+searchInput.addEventListener('focus', async () => {
 
-  resultDiv.innerHTML += state
-  document.addEventListener("click", (event) => {
-    if (!document.querySelector("#searchBar").contains(event.target)) {
-      resultDiv.innerHTML = ""
-    }
-  })
+    let state = `<ul class="allBooks">${await renderBooks(storedBooks)}</ul>`
+
+    resultDiv.innerHTML += state
+    document.addEventListener('click', (event) => {
+        if (!document.querySelector('#searchBar').contains(event.target)) {
+            resultDiv.innerHTML = ""
+        }
+    })
 })
 
 function search() {
-  let input, filter, ul, li, h4, i, txtValue
-  input = document.getElementById("searchInput")
-  filter = input.value.toUpperCase()
-  ul = document.querySelector(".allBooks")
-  li = ul.getElementsByTagName("li")
-
-  for (i = 0; i < li.length; i++) {
-    h4 = li[i].getElementsByTagName("h4")[0]
-    txtValue = h4.textContent || h4.innerText
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = ""
-    } else {
-      li[i].style.display = "none"
+    let input, filter, ul, li, h4, i, txtValue
+    input = document.getElementById('searchInput')
+    filter = input.value.toUpperCase()
+    ul = document.querySelector(".allBooks")
+    li = ul.getElementsByTagName('li')
+    
+    for (i = 0; i < li.length; i++) {
+        h4 = li[i].getElementsByTagName("h4")[0]
+        txtValue = h4.textContent || h4.innerText
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = ""
+        } else {
+            li[i].style.display = "none"
+        }
     }
-  }
 }
-//
