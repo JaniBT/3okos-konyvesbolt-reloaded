@@ -2,7 +2,7 @@
 
 Üdvözöllek a **Paginae Fascinantes** webáruház dokumentációjában! Ez a webáruház kifejezetten az olvasás szerelmeseinek készült, akik szeretik felfedezni a különféle témájú könyveket.
 
-Link a weboldalhoz: LINK IDE
+Link a weboldalhoz: [Paginae Fasinantes](https://link-url-here.org](https://janibt.github.io/3okos-konyvesbolt-reloaded))
 
 ## 📚 Kategóriák Kiválasztása
 
