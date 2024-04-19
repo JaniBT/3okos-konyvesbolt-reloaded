@@ -8,7 +8,7 @@
     Ismeretterjesztő
 
     A fegyelem a sors; Ryan Holiday; 2023 ✅
-    6 090 Ft
+    4 090 Ft
     Életmód, egészség
 
     Tönkretett figyelem; Johann Hari; 2023 ✅
