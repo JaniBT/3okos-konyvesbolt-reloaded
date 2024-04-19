@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./home_page/stylesheets/styles.css" />
+    <link rel="stylesheet" href="./home_page/stylesheets/animations.css" />
+    <link rel="stylesheet" href="./home_page/stylesheets/media_queries.css" />
+
+    <title>Paginae Fascinantes</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="title_div">
+        <h1><span>P</span>aginae Fascinantes</h1>
+      </div>
+      <nav class="middle-navbar">
+        <ul>
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="../books_page/books.html">Könyvek</a></li>
+          <li><a href="../stephen_king/stephen_king.html">Stephen King</a></li>
+          <li class="notShowing">
+            <button type="button" class="searchBtn">
+              <i class="fa fa-search"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="search_div">
+        <i
+          class="fa fa-search"
+          id="bigSearchBtn"
+          onclick="toggleSearchBar()"
+        ></i>
+      </div>
+
+      <div class="dropdown-menus">
+        <div class="hamburger-container" onclick="openDropdown(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="dropdown-menu" class="menus">
+          <a href="index.html">Kezdőlap</a>
+          <a href="../books_page/books.html">Könyvek</a>
+          <a href="../stephen_king/stephen_king.html">Stephen King</a>
+          <a href="javascript:void(0)" onclick="toggleSearchBar()"
+            ><i class="fa fa-search"></i> Keresés</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="search-bar" id="searchBar">
+      <div class="flex-close">
+        <h3>Könyv keresése...</h3>
+        <span class="close-button" onclick="closeSearchBar()">&#10006;</span>
+      </div>
+      <div class="relative_div">
+        <input
+          type="text"
+          onkeyup="search()"
+          placeholder="Keresés..."
+          id="searchInput"
+        />
+        <div id="renderId"></div>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <section aria-label="Könyv ajánlatok">
+        <div class="carousel" data-carousel>
+          <button
+            type="button"
+            class="carousel-button prev"
+            data-carousel-button="prev"
+          >
+            <i class="fa fa-arrow-circle-o-left"></i>
+          </button>
+          <button
+            type="button"
+            class="carousel-button next"
+            data-carousel-button="next"
+          >
+            <i class="fa fa-arrow-circle-o-right"></i>
+          </button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="../assets/book-ragyogas-xl.png" alt="A Ragyogás" />
+            </li>
+            <li class="slide">
+              <img
+                src="../assets/book-gyilkossag_a_panel_tetejen-xl.png"
+                alt="Gyilkosság a Panel Tetején"
+              />
+            </li>
+            <li class="slide">
+              <img src="../assets/book-az-xl.png" alt="AZ" />
+            </li>
+            <li class="slide">
+              <img
+                src="../assets/book-tedd_magad_hasznossa-xl.png"
+                alt="Tedd magad hasznossá!"
+              />
+            </li>
+          </ul>
+          <div class="circles" data-circles>
+            <i class="fa fa-circle circle" data-indicator data-active></i>
+            <i class="fa fa-circle circle" data-indicator></i>
+            <i class="fa fa-circle circle" data-indicator></i>
+            <i class="fa fa-circle circle" data-indicator></i>
+          </div>
+        </div>
+      </section>
+      <section class="section_recommend">
+        <div class="recommend_title">
+          <h2>Legjobb Ajánlataink</h2>
+          <div class="full_list">
+            <p>Teljes Lista</p>
+          </div>
+        </div>
+        <hr class="horizontal-line" />
+        <div class="recommend_books">
+          <div>
+            <div class="main_recommend_book">
+              <img src="../assets/book-help_wanted-sm.jpg" alt="Help Wanted Könyv" />
+              <h3>Help Wanted</h3>
+              <p>Írta Adelle Waldman</p>
+              <a href="../books_page/help_Wanted.html" class="interestedBtn"
+                >Érdekel</a
+              >
+            </div>
+          </div>
+          <div class="small_recommend_books swiper" id="book_wrapper">
+            <div class="swiper-wrapper">
+              <div class="recommend_book swiper-slide">
+                <img
+                  src="../assets/book-miutan_elvesztettelek-sm.jpg"
+                  alt="Miután Elvesztettelek"
+                />
+                <h4 class="recommend_book_title">Miután Elvesztettelek</h4>
+                <p class="recommend_book_author">Jojo Moyes</p>
+                <hr class="recommend_book_hr" />
+                <p class="recommend_book_type">
+                  <i class="fa fa-book"></i> Könyv
+                </p>
+                <h5 class="recommend_book_price">Ár: 5790 Ft</h5>
+                <a
+                  href="../books_page/miutan_elvesztettelek.html"
+                  class="recommend_book_interested"
+                  >Érdekel</a
+                >
+              </div>
+              <div class="recommend_book swiper-slide">
+                <img src="../assets/book-babel-sm.jpg" alt="Babel" />
+                <h4 class="recommend_book_title">Babel</h4>
+                <p class="recommend_book_author">R. F. Kuang</p>
+                <hr class="recommend_book_hr" />
+                <p class="recommend_book_type">
+                  <i class="fa fa-book"></i> Könyv
+                </p>
+                <h5 class="recommend_book_price">Ár: 6290 Ft</h5>
+                <a
+                  href="../books_page/babel.html"
+                  class="recommend_book_interested"
+                  >Érdekel</a
+                >
+              </div>
+              <div class="recommend_book swiper-slide">
+                <img
+                  src="../assets/book-a_megegyszer_ereje-sm.jpg"
+                  alt="A még egyszer ereje"
+                />
+                <h4 class="recommend_book_title">A "Még egyszer" ereje</h4>
+                <p class="recommend_book_author">Ed Mylett</p>
+                <hr class="recommend_book_hr" />
+                <p class="recommend_book_type">
+                  <i class="fa fa-book"></i> Könyv
+                </p>
+                <h5 class="recommend_book_price">Ár: 4390 Ft</h5>
+                <a
+                  href="../books_page/meg_egyszer_ereje.html"
+                  class="recommend_book_interested"
+                  >Érdekel</a
+                >
+              </div>
+              <div class="recommend_book swiper-slide">
+                <img
+                  src="../assets/book-a_fegyelem_a_sors-sm.jpg"
+                  alt="A Fegyelem A Sors"
+                />
+                <h4 class="recommend_book_title">A Fegyelem a Sors</h4>
+                <p class="recommend_book_author">Ryan Holiday</p>
+                <hr class="recommend_book_hr" />
+                <p class="recommend_book_type">
+                  <i class="fa fa-book"></i> Könyv
+                </p>
+                <h5 class="recommend_book_price">Ár: 6090 Ft</h5>
+                <a
+                  href="../books_page/a_fegyelem_a_sors.html"
+                  class="recommend_book_interested"
+                  >Érdekel</a
+                >
+              </div>
+              <div class="recommend_book swiper-slide">
+                <img
+                  src="../assets/book-negyedik_szarny-sm.jpg"
+                  alt="Negyedik szárny"
+                />
+                <h4 class="recommend_book_title">Negyedik Szárny</h4>
+                <p class="recommend_book_author">Rebecca Yarros</p>
+                <hr class="recommend_book_hr" />
+                <p class="recommend_book_type">
+                  <i class="fa fa-book"></i> Könyv
+                </p>
+                <h5 class="recommend_book_price">Ár: 8390 Ft</h5>
+                <a
+                  href="../books_page/negyedik_szarny.html"
+                  class="recommend_book_interested"
+                  >Érdekel</a
+                >
+              </div>
+              <div class="recommend_book swiper-slide">
+                <img
+                  src="../assets/book-hajnal_csillag-sm.jpg"
+                  alt="Miután Elvesztettelek"
+                />
+                <h4 class="recommend_book_title">Hajnal Csillag</h4>
+                <p class="recommend_book_author">Karl Ove Knausgård</p>
+                <hr class="recommend_book_hr" />
+                <p class="recommend_book_type">
+                  <i class="fa fa-book"></i> Könyv
+                </p>
+                <h5 class="recommend_book_price">Ár: 4590 Ft</h5>
+                <a
+                  href="../books_page/hajnal_csillag.html"
+                  class="recommend_book_interested"
+                  >Érdekel</a
+                >
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section_unmissable">
+        <div class="section_unmissable_title">
+          <h2>Kihagyhatatlan Könyvek</h2>
+        </div>
+        <div class="section_unmissable_images">
+          <a href="../books_page/ragyogas.html" class="unmissable_div">
+            <div class="unmissable_img"></div>
+            <h3>Stephen King: <strong>A Ragyogás</strong></h3>
+          </a>
+          <a href="../books_page/amiert_halal_jart.html" class="unmissable_div">
+            <div class="unmissable_img2"></div>
+            <h3>Dulai Péter: <strong>Amiért halál járt</strong></h3>
+          </a>
+          <a href="../books_page/baljos_tavasz.html" class="unmissable_div">
+            <img src="../assets/book-baljos_tavasz-sm.jpg" alt="Baljós Tavasz" />
+            <h3>Agatha Christie: <strong>Baljós Tavasz</strong></h3>
+          </a>
+        </div>
+      </section>
+      <section class="section_discount">
+        <div class="section_dicount_title">
+          <h2>Aktuális Akcióink</h2>
+          <hr class="horizontal-line" />
+        </div>
+        <div class="discount_main_section">
+          <div class="discount_texts">
+            <a
+              href="../books_page/gyilkossaga_a_panel_tetejen.html"
+              class="discount_div"
+              data-image="../assets/book-gyilkossag_a_panel_tetejen-xl.png"
+            >
+              <div>
+                <h5 class="lil_title">Gyilkosság a Panel Tetején</h5>
+                <p class="releaseYear">2023</p>
+              </div>
+              <div>
+                <p class="discount">akció</p>
+              </div>
+            </a>
+            <a
+              href="../books_page/a_kreativ_folyamat.html"
+              class="discount_div"
+              data-image="../assets/book-a_kreativ_folyamat-xl.png"
+            >
+              <div>
+                <h5 class="lil_title">A kreatív folyamat</h5>
+                <p class="releaseYear">2023</p>
+              </div>
+              <div>
+                <p class="discount">akció</p>
+              </div>
+            </a>
+            <a
+              href="../books_page/miert_nem_mondta_ezt_nekem_senki.html"
+              class="discount_div"
+              data-image="../assets/book-miert_nem_mondta-xl.png"
+            >
+              <div>
+                <h5 class="lil_title">Miért nem mondta ezt nekem senki?</h5>
+                <p class="releaseYear">2023</p>
+              </div>
+              <div>
+                <p class="discount">akció</p>
+              </div>
+            </a>
+            <a
+              href="../books_page/tonkretett_figyelem.html"
+              class="discount_div"
+              data-image="../assets/book-tonkretett_figyelem-xl.png"
+            >
+              <div>
+                <h5 class="lil_title">Tönkretett figyelem</h5>
+                <p class="releaseYear">2022</p>
+              </div>
+              <div>
+                <p class="discount">akció</p>
+              </div>
+            </a>
+          </div>
+          <div class="discount_images">
+            <img
+              src=""
+              alt="Image Slider"
+              id="previewImage"
+              class="imagePreview"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="book_for_kid">
+        <div class="KidBook"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img id="footer-img" src="../assets/logo.png" alt="logo" />
+      <ul class="footer-list">
+        <li class="footer-liItem">
+          <a
+            title="Csordás János"
+            href="https://github.com/JaniBT"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li class="footer-liItem">
+          <a
+            title="Vásári András"
+            href="https://github.com/arris05"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li class="footer-liItem">
+          <a
+            title="Koós Balázs Bence"
+            href="https://github.com/koosbalazsbence"
+            class="footer-link"
+            target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <!-- <li><a href="https://github.com/koosbalazsbence" target="_blank"><img class="footer-img" src="../assets/github.png" alt="github-logo-link" title="@koosbalazsbence"></a></li> -->  
+      </ul>
+      <hr id="footer-hr" />
+      <ul class="footer-list_down">
+        <li class="footer-liItem">
+          <span id="fullYear"></span> &copy; Paginae Fascinantes - Minden jog
+          fenntartva
+        </li>
+        <li class="footer-liItem">A 3okos tulajdona</li>
+      </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./home_page/scripts/scripts.js"></script>
+  </body>
+</html>
