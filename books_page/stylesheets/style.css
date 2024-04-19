@@ -755,6 +755,7 @@ ul.breadcrumb li a:hover {
     text-align: center;
     color: var(--background);
     margin-top: 1rem;
+    padding: 0;
 }
 /* / Footer */
 
