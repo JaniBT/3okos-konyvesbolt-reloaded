@@ -17,7 +17,6 @@
     --bg-hover-gray: rgb(31 41 55 / 1);
 }
 html{
-    box-sizing: border-box;
     font-family: var(--ff-poppins);
 }
 *{
@@ -26,6 +25,11 @@ html{
     scrollbar-width: thin;
     scrollbar-color: #69686a var(--white);
     scroll-behavior: smooth;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 *::-webkit-scrollbar {
     width: 16px;
@@ -343,6 +347,7 @@ ul.breadcrumb li a:hover {
 }
 .category-list{
     font-size: 1.25rem;
+    padding: 1rem;
 }
 .category-list-link{
     text-decoration: none;
@@ -633,16 +638,20 @@ ul.breadcrumb li a:hover {
 .description{
     display: block;
     font-size: .85rem;
+    padding: 1rem;
 }
 .booklist-inner-div-third-span{
     text-decoration: line-through;
     text-align: center;
 }
 .booklist-inner-div-second{
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 0;
     width: 30rem;
     /* border: 1px dotted red; */
+}
+.booklist-inner-div-second h2, h3 ,p{
+    padding: .5rem;
 }
 .booklist-table{
     width: fit-content;
