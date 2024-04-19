@@ -96,7 +96,7 @@ discountDivs.forEach((disc, index) => {
         
         if (index <= discountDivs.length) {
             discountDivs[0].classList.add('active')
-            previewImage.src = '../assets/book-gyilkossag_a_panel_tetejen-xl.png'
+            previewImage.src = './assets/book-gyilkossag_a_panel_tetejen-xl.png'
             previewImage.style.opacity = '1'
         }
         
@@ -110,7 +110,7 @@ function removeActiveClasses() {
 }
 
 discountDivs[0].classList.add('active')
-previewImage.src = '../assets/book-gyilkossag_a_panel_tetejen-xl.png'
+previewImage.src = './assets/book-gyilkossag_a_panel_tetejen-xl.png'
 
 // Search bar funkcionalitás innen indul:
 /* 
@@ -161,7 +161,7 @@ async function renderBooks(data) {
 }
 
 async function fetchData() {
-    const response = await fetch('../../booksJSON/books.json')
+    const response = await fetch('../booksJSON/books.json')
     const data = await response.json()
 
     return data
