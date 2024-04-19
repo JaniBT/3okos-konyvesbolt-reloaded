@@ -17,14 +17,14 @@
         "name": "A fegyelem a sors",
         "author": "Ryan Holiday",
         "release": 2023,
-        "hrefHome": "../books_page/aFegyelemAsors.html",
+        "hrefHome": "../books_page/a_fegyelem_a_sors.html",
         "hrefBooks": "./a_fegyelem_a_sors.html"
     },
     {
         "name": "Tönkretett figyelem",
         "author": "Johann Hari",
         "release": 2022,
-        "hrefHome": "../books_page/tonkretettFigyelem.html",
+        "hrefHome": "../books_page/tonkretett_figyelem.html",
         "hrefBooks": "./tonkretett_figyelem.html"
     },
     {
