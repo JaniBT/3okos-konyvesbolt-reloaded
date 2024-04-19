@@ -57,7 +57,7 @@ async function renderBooks(data) {
         state += 
         `
             <li>
-                <a href="${bookDatas.hrefHome}">
+                <a href="${bookDatas.hrefBooks}">
                     <div class="book_listItems">
                         <div>
                             <h4>${bookDatas.name}</h4>
